@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corinthians</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+<<<<<<< HEAD
+=======
+            background-image: url('https://cdn.meutimao.com.br/_upload/wallpapers/corinthians_em_widescreen_e_alta_definicao_tw_1600x900.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+>>>>>>> b22f64b0a2b9b4e2e02d1d60a8f63a163cab25c7
+            color: #FFF;
+            overflow: hidden; /* Para esconder o overflow causado pelo efeito parallax */
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #FFF;
+            position: relative;
+            z-index: 2; /* Para garantir que o cabeçalho esteja sobre o fundo */
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            position: relative;
+            z-index: 2; /* Para garantir que a navegação esteja sobre o fundo */
+        }
+        .nav a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+        .main-content {
+            text-align: center;
+            margin: 50px 20px;
+<<<<<<< HEAD
+            position: relative;
+            z-index: 2; /* Para garantir que o conteúdo principal esteja sobre o fundo */
+=======
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+>>>>>>> b22f64b0a2b9b4e2e02d1d60a8f63a163cab25c7
+        }
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .table-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            animation: slideIn 1s ease-out;
+            position: relative;
+            z-index: 2; /* Para garantir que a tabela esteja sobre o fundo */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background-color: #333;
+        }
+        td img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .imagem-canto {
+            position: fixed;
+            bottom: 1px;
+            right: 10px;
+            z-index: 1000;
+        }
+<<<<<<< HEAD
+        /* Fundo 3D */
+        .background-3d {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center fixed;
+            background-size: cover;
+            transform: translateZ(-1px) scale(1.5);
+            z-index: -1;
+            animation: moveBackground 30s linear infinite;
+        }
+        @keyframes moveBackground {
+            from {
+                transform: translateY(0) translateZ(-1px) scale(1.5);
+            }
+            to {
+                transform: translateY(-100px) translateZ(-1px) scale(1.5);
+            }
+        }
+=======
+>>>>>>> b22f64b0a2b9b4e2e02d1d60a8f63a163cab25c7
+    </style>
+</head>
+<body>
+    <div class="background-3d"></div>
+    <header class="header">
+        <img src="https://e7.pngegg.com/pngimages/859/48/png-clipart-hawks-da-fiel-carnival-in-sao-paulo-sport-club-corinthians-paulista-samba-school-ligasp-others-logo-vertebrate.png" alt="Corinthians Logo">
+        <h1>Sport Club Corinthians Paulista</h1>
+    </header>
+    <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="news.html">Notícias</a>
+        <a href="matches.html">Partidas</a>
+        <a href="team.html">Elenco</a>
+        <a href="contact.html">Contato</a>
+    </nav>
+    <div class="main-content">
+        <h2>Mais do que um time</h2>
+        <p>O Sport Club Corinthians Paulista é uma paixão que transcende o campo e une milhões de corações alvinegros. Aqui, você encontra tudo sobre o nosso time, das últimas notícias aos detalhes dos próximos jogos.</p>
+    </div>
+    <div class="table-container">
+        <h2>Títulos Conquistados</h2>
+        <table>
+            <tr>
+                <th>Imagem</th>
+                <th>Título</th>
+                <th>Ano</th>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Ta%C3%A7a_do_Campeonato_Brasileiro.png/452px-Ta%C3%A7a_do_Campeonato_Brasileiro.png" width="50" height="50" alt="Brasileirão"></td>
+                <td>Campeonato Brasileiro</td>
+                <td>1990, 1998, 1999, 2005, 2011, 2015, 2017</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/CampeonatoPaulista2017-.png/27px-CampeonatoPaulista2017-.png" width="50" height="50" alt="Campeonato Paulista"></td>
+                <td>Campeonato paulista</td>
+                <td>1914, 1916, 1922, 1923, 1924, 1928, 1929, 1930, 1937, 1938, 1939, 1941, 1951, 1952, 1954, 1977, 1979, 1982, 1983, 1988, 1995, 1997, 1999, 2001, 2003, 2009, 2013, 2017, 2018, e 2019 </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/CopadoBrasil2008-2012.png/23px-CopadoBrasil2008-2012.png" width="510" height="50" alt="Copa do Brasil"></td>
+                <td>Copa do Brasil</td>
+                <td>1995, 2002, 2009</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/CopaLibertadores1960-.png/320px-CopaLibertadores1960-.png" width="50" height="50" alt="Libertadores"></td>
+                <td>Copa Libertadores</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/27px-Coppa_Del_Mondo_per_Club.png" width="50" height="50" alt="Mundial de Clubes"></td>
+                <td>Mundial de Clubes</td>
+                <td>2000, 2012</td>
+            </tr>
+        </table>
+    </div>
+    <div class="main-content">
+        <h2>Biografia do Corinthians</h2>
+        <p>
+            O Sport Club Corinthians Paulista, conhecido popularmente como Corinthians, é um dos clubes de futebol mais tradicionais e populares do Brasil. Fundado em 1º de setembro de 1910 por um grupo de operários do bairro do Bom Retiro, em São Paulo, o clube foi inspirado pelo Corinthian FC de Londres, famoso por sua ética de jogo limpo e esportividade.
+        </p>
+        <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=828,quality=75,fit=pad,format=webp/uploads/2022/09/01/63107feac1472.jpeg" width="900" height="500" alt="Fundadores do Corinthians">
+        <p>
+            Desde suas origens humildes, o Corinthians cresceu exponencialmente e hoje é uma potência no futebol brasileiro e mundial. O clube tem uma história rica, marcada por grandes conquistas e momentos memoráveis. Entre os títulos mais importantes estão o bicampeonato mundial de clubes (2000 e 2012), a Copa Libertadores da América (2012), e diversos títulos nacionais como o Campeonato Brasileiro e a Copa do Brasil.
+        </p>
+<<<<<<< HEAD
+        <img src="https://i.pinimg.com/564x/bf/4e/af/bf4eafe4e8a79a094182b8245d718665.jpg" width="900" height="500" alt="Corinthians Campeão Mundial 2012">
+        <p>
+            O Corinthians é famoso por sua torcida apaixonada, conhecida como "Fiel Torcida". Os torcedores corinthianos são conhecidos por seu apoio incondicional ao clube, lotando estádios e criando uma atmosfera única em dias de jogo. O lema "Aqui é Corinthians" reflete o espírito combativo e resiliente do time e de seus seguidores.
+        </p>
+        <img src="https://cdn.meutimao.com.br/_upload/noticia/2023/04/21/gavioes-da-fiel-maior-torcida-organizada-do-cz941w.jpg" width="900" height="500" alt="Fiel Torcida">
+        <p>
+            A arena do clube, conhecida como Arena Corinthians ou Neo Química Arena, localizada em Itaquera, Zona Leste de São Paulo, é uma das mais modernas do Brasil e foi palco da abertura da Copa do Mundo FIFA de 2014. A construção da arena marcou uma nova era para o clube, proporcionando uma casa moderna e confortável para seus torcedores.
+        </p>
+        <img src="https://cdn.meutimao.com.br/_upload/wallpapers/arena_corinthians_em_hd_p4_1920x1080.jpg" width="900" height="500" alt="Arena Corinthians">
+        <p>
+            O Corinthians também é conhecido por seu trabalho social e comunitário. O clube mantém diversas iniciativas de inclusão e desenvolvimento social, especialmente voltadas para jovens e comunidades carentes. Além do futebol, o clube tem equipes em outros esportes, promovendo a prática esportiva e o bem-estar.
+        </p>
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/corinthians-campanha-lgbt-1-e1684345850421.png?w=1024" width="900" height="500" alt="Trabalho Social">
+        <p>
+            Com uma história de mais de um século, o Corinthians continua a ser um dos clubes mais importantes e influentes do futebol mundial. Sua trajetória de sucesso, sua torcida fervorosa e seu compromisso com a comunidade fazem do Corinthians não apenas um clube de futebol, mas uma verdadeira instituição do esporte e da sociedade brasileira.
+        </p>
+    </div>
+    <div class="imagem-canto">
+        <img src="https://i.pinimg.com/564x/73/24/8b/73248bbaefa6912153adf59b4cd95b92.jpg" width="105" height="125" alt="Imagem no Canto">
+    </div>
+</body>
+</html>
+=======
+        <img src="https://i.pinimg.com/564x/bf/4e
+>>>>>>> b22f64b0a2b9b4e2e02d1d60a8f63a163cab25c7

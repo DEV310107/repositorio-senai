@@ -1,0 +1,9 @@
+*{
+    margin: 0; /*remove a margem */
+    padding: 0; /*remove o preenchimento interno */
+    border: 0; /*remove a borda de todos elementos*/
+    outline: 0; /*remove o contorno dos elementos */
+    box-sizing: border-box; /*Altera o modelo de caixa para incluir margens e preenchimentos dentro das dimensões totais do elemento. Isso facilita o controle sobre as dimensões.*/
+    list-style: none;/* remove os estilos de listas*/
+    text-decoration: none;/*remove decoração de texto */
+}
