@@ -1,4 +1,4 @@
-from conf import menu, login, cadastro, menu_
+from conf import menu, login, cadastro, menu_login
 import os
 
 sair = None
