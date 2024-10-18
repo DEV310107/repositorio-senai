@@ -1,4 +1,4 @@
-from conf import menu, login, cadastro, menu_login
+from conf import *
 import os
 
 sair = None
@@ -8,14 +8,14 @@ while sair != 0:
         escolha = menu()
 
         match escolha:
-            case 1:
-                if login():
-                    menu_login()
+            case "1":
+                    login()
+                    
     
-            case 2:
+            case "2":
                 cadastro()
 
-            case 3:
+            case "3":
                 sair = 0
 
             case _:

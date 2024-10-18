@@ -1,12 +1,11 @@
-from classes import User
+from classes import User, Banco, Conta, Poupanca, Corrente
 import os 
-import random #importa a biblioteca ramdom
+import random
 
-
-usuarios = [] #lista dos usuarios cadastrados
+usuarios = []
 
 def limpa():
-    os.system("cls" if os.name == "nt" else "clear")
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def menu():
     print("=" * 30)
@@ -21,92 +20,110 @@ def menu():
     return escolha
 
 def cadastro():
+    limpa()
     print("=" * 30)
-    print("" * 8 + "CADASTRO")
+    print(" " * 8 + "CADASTRO")
     print("=" * 30)
-    nome = input("DIGITE SEU NOME COMPLETO \n -->")
-    os.system("cls")
-    sobrenome = input("DIGITE SEU SOBRENOME \n -->")
-    os.system("cls")
-    n_user = input("CRIE UM NOME DE USUARIO \n -->")
-    os.system("cls")
-    cpf = input("DIGITE SEU CPF \n -->")
-    os.system("cls")
-    n_telefone = input("DIGITE SEU NUMERO DE TELEFONE \n -->")
-    os.system("cls")
-    senha = input("CRIE UMA SENHA \n -->")
-
+    nome = input("DIGITE SEU NOME COMPLETO \n --> ")
+    sobrenome = input("DIGITE SEU SOBRENOME \n --> ")
+    n_user = input("CRIE UM NOME DE USUARIO \n --> ")
+    cpf = input("DIGITE SEU CPF \n --> ")
+    n_telefone = input("DIGITE SEU NUMERO DE TELEFONE \n --> ")
+    senha = input("CRIE UMA SENHA \n --> ")
     novo_user = User(nome, sobrenome, n_user, cpf, n_telefone, senha)
     usuarios.append(novo_user)
-
-    print("cadastrado com sucesso")
+    print("Cadastrado com sucesso!!!")
     limpa()
+    
 
 def login():
     print("=" * 30)
-    print("" * 8 + "LOGIN")
+    print(" " * 8 + "LOGIN")
     print("=" * 30)
-    cpf = input ("DIGITE SEU CPF \n -->")
-    senha = input ("DIGITE SUA SENHA \n -->")
+    cpf = input("DIGITE SEU CPF \n --> ")
+    senha = input("DIGITE SUA SENHA \n --> ")
+    limpa()
 
     for usuario in usuarios:
         if usuario.cpf == cpf and usuario.senha == senha:
-            print(f"BEM VINDO {usuarios.n_user}!!!")
+            print(f"BEM VINDO {usuario.n_user}!!!") 
+            menu_opcao()
             return True
-    print("USUARIO NÃO ENCONTRADO, TENTE DENOVO!!!")
+    print("USUÁRIO NÃO ENCONTRADO, TENTE NOVAMENTE!!!")
     return False
-limpa()
 
-def menu_opcao():
-    print("=" * 30)
-    print(" " * 8 + "NEXO BANK")
-    print("=" * 30)
-    print("1 - VERIFICAR SALDO")
-    print("2 - DEPOSITO")
-    print("3 - SAQUE")
-    print("4 - EMPRESTIMO")
-    print("5 - FINALIZAR SESSÃO")
-    print("=" * 30)
-
-def menu_login():
+def menu_opcao(usuario):
     sair = None
-
     while sair != 0:
+        print("=" * 30)
+        print(" " * 8 + "NEXO BANK")
+        print("=" * 30)
+        print("1 - CONTA POUPANÇA")
+        print("2 - CONTA CORRENTE")
+        print("0 - SAIR")
+        print("=" * 30)
+        
         try:
-            escolha = menu_opcao
-
+            escolha = int(input("ESCOLHA UMA OPÇÃO \n --> "))
+            
             match escolha:
                 case 1:
-                    v_saldo()
+                    # Aqui passamos a conta poupança do usuário para a função poupanca
+                    conta_poupanca = usuario.conta_poupanca  # Atribuir a conta poupança
+                    poupanca(conta_poupanca)
                 case 2:
-                    deposito()
-                case 3:
-                    saque()
-                case 4:
-                    emprestimo()
-                case 5:
+                    # Aqui seria implementada a conta corrente do usuário
+                    conta_corrente = usuario.conta_corrente  # Atribuir a conta corrente
+                    corrente(conta_corrente)
+                case 0:
                     sair = 0
-                
-
+                    
         except Exception as e:
-            print(f"OCORREU UM ERRO {e}")
+            print(f"OCORREU UM ERRO: {e}")
             limpa()
 
-            
+def poupanca(conta_poupanca):
+    limpa()
+    print("BEM-VINDO À POUPANÇA")
+    print("O QUE VOCÊ DESEJA FAZER: ")
+    print("1 - SALDO")
+    print("2 - INVESTIR")
+    
+    try:
+        escolha = int(input("---> "))
 
-def v_saldo():
-    saldo = random.random() * 1000
-    print(f"seu saldo é de ${saldo}")
+        match escolha:
+            case 1:
+                limpa()
+                conta_poupanca.exibir_saldo()  # Exibir saldo
+                os.system("pause")
+                limpa()
+            case 2:
+                limpa()
+                try:
+                    valor_deposito = float(input("Insira o valor para depósito: R$ "))
+                    resultado = conta_poupanca.depositos(valor_deposito)  # Depositar valor
+                    print(resultado)
+                except ValueError:
+                    print("Por favor, insira um valor válido.")
+                os.system("pause")
+                limpa()
+            case 3:
+                limpa()
+                try:
+                    valor_saque = float(input("Insira o valor para saque: R$ "))
+                    resultado = conta_poupanca.saque(valor_saque)  # Sacar valor
+                    print(resultado)
+                except ValueError:
+                    print("Por favor, insira um valor válido.")
+                os.system("pause")
+                limpa()
+    except ValueError:
+        print("Por favor, insira uma opção numérica válida.")
+        os.system("pause")
+        limpa()
 
-def deposito():
-    pass
-
-def saque():
-    pass
-
-def emprestimo():
-    pass
-
-
-
-
+def corrente(conta_corrente):
+    limpa()
+    print("BEM-VINDO À CONTA CORRENTE")
+    # Implementar funcionalidades da conta corrente
