@@ -27,7 +27,7 @@ class Banco:
 
     def get_cpf(self):
         return self.cpf
-
+1  
     def get_n_telefone(self):
         return self.n_telefone
 
