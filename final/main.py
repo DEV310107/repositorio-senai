@@ -1,5 +1,5 @@
 import os
-from conf import*
+from conf import menu, login, cadastro
 
 sair = False
 

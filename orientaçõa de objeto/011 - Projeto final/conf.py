@@ -1,5 +1,5 @@
-from classes import User, Banco, Conta, Poupanca, Corrente
-import os 
+from classes import User, Poupanca
+import os
 import random
 
 usuarios = []
@@ -34,9 +34,9 @@ def cadastro():
     usuarios.append(novo_user)
     print("Cadastrado com sucesso!!!")
     limpa()
-    
 
 def login():
+    limpa()
     print("=" * 30)
     print(" " * 8 + "LOGIN")
     print("=" * 30)
@@ -47,9 +47,11 @@ def login():
     for usuario in usuarios:
         if usuario.cpf == cpf and usuario.senha == senha:
             print(f"BEM VINDO {usuario.n_user}!!!") 
-            menu_opcao()
+            menu_opcao(usuario)  # Passar o usuário logado para o menu de opções
             return True
     print("USUÁRIO NÃO ENCONTRADO, TENTE NOVAMENTE!!!")
+    os.system("pause")
+    limpa()
     return False
 
 def menu_opcao(usuario):
@@ -68,18 +70,21 @@ def menu_opcao(usuario):
             
             match escolha:
                 case 1:
-                    # Aqui passamos a conta poupança do usuário para a função poupanca
-                    conta_poupanca = usuario.conta_poupanca  # Atribuir a conta poupança
+                    conta_poupanca = usuario.conta_poupanca  # Atribuir a conta poupança do usuário
                     poupanca(conta_poupanca)
                 case 2:
-                    # Aqui seria implementada a conta corrente do usuário
-                    conta_corrente = usuario.conta_corrente  # Atribuir a conta corrente
+                    conta_corrente = usuario.conta_corrente  # Atribuir a conta corrente do usuário
                     corrente(conta_corrente)
                 case 0:
                     sair = 0
                     
+        except ValueError:
+            print("Por favor, insira uma opção numérica válida.")
+            os.system("pause")
+            limpa()
         except Exception as e:
             print(f"OCORREU UM ERRO: {e}")
+            os.system("pause")
             limpa()
 
 def poupanca(conta_poupanca):
@@ -88,6 +93,7 @@ def poupanca(conta_poupanca):
     print("O QUE VOCÊ DESEJA FAZER: ")
     print("1 - SALDO")
     print("2 - INVESTIR")
+    print("3 - SAQUE")
     
     try:
         escolha = int(input("---> "))
