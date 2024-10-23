@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Arima", system-ui;
+    color: white;
+    background-image: url(https://i.pinimg.com/736x/07/9f/fc/079ffc1c7bc9f4ad54455bb2669073bf.jpg);
+}
+
+
+.cabeca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.botao_entrar {
+    width: 110px;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: seagreen;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.botao_entrar:hover {
+    background-color: darkgreen; 
+    transform: scale(1.05); 
+}
