@@ -1,4 +1,4 @@
-from classes import User, Poupanca
+from classes import *
 import os
 import random
 

@@ -6,7 +6,7 @@ class Banco:
     def adicionar_usuario(self, usuario):
         self.usuarios.append(usuario)
 
-
+class User:
     def __init__(self, nome, sobrenome, n_user, cpf, n_telefone, senha):
         self.nome = nome
         self.sobrenome = sobrenome
