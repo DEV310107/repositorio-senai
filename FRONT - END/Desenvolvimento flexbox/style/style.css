@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -12,11 +11,10 @@
 }
 
 body {
-    font-family: "Arima", system-ui;
     color: black;
     background-color: aliceblue;
+    font-family: "Arima", system-ui;
 }
-
 
 .cabeca {
     display: flex;
@@ -47,7 +45,7 @@ body {
 }
 
 .corpo01 {
-    font-family: "Inter", serif;
+    
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -78,6 +76,11 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
+.bot:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
 .imagem01 {
     max-width: 100px;
 }
@@ -89,7 +92,6 @@ body {
 
 .sec02 {
     background-color:rgb(63, 60, 60);
-    font-family: "Inter", serif;
 }
 
 .txt02 {
@@ -106,20 +108,42 @@ body {
 
 .sec03{
     display: flex ;
-    justify-content: space-around  ;
-    align-items: center;
+    justify-content: flex-end  ;
+    flex-direction: row;
+    margin-top: 50px;
+
 }
 
 .p {
-    font-family: "Inter", serif; 
     font-size: 16px;
-}
-
-.conteudo_final {
     max-width: 50%;
 }
 
+.conteudo_final {
+    margin-top: 25px;
+    max-width: 50%;
+}
+
+.imagem3 {
+    margin-left: 50px;
+}
+
 .img03 {
-    width: 180px;
-    height: 180px;
+    width: 450px;
+    height: 450px;
+}
+
+footer {
+    background-color: black;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.redeimg {
+    height: 40px;
+    width: 90px;
 }
