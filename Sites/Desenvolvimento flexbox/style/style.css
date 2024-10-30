@@ -14,7 +14,7 @@
 body {
     font-family: "Arima", system-ui;
     color: black;
-    background-image: url(https://images.unsplash.com/photo-1728930684293-691453ac6f7b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: aliceblue;
 }
 
 
@@ -83,6 +83,43 @@ body {
 }
 
 .atleta {
-    width: 100px;
-    height: 100px;
+    width: 370px;
+    height: 370px;
+}   
+
+.sec02 {
+    background-color:rgb(63, 60, 60);
+    font-family: "Inter", serif;
+}
+
+.txt02 {
+    color: white;
+    text-align: center;
+}
+
+.meio_preto {
+    width: 180px;
+    height: 180px;
+    margin-left: 42%;
+}
+
+
+.sec03{
+    display: flex ;
+    justify-content: space-around  ;
+    align-items: center;
+}
+
+.p {
+    font-family: "Inter", serif; 
+    font-size: 16px;
+}
+
+.conteudo_final {
+    max-width: 50%;
+}
+
+.img03 {
+    width: 180px;
+    height: 180px;
 }
