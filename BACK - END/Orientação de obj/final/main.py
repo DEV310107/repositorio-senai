@@ -19,5 +19,4 @@ while sair != 0:#Define a variável 'sair' para controlar o loop do menu
                       
     except Exception as e:
         print(f"Ocorreu um erro: {e}") #informa o usuario sobre o erro
-        os.system("pause")
-        os.system("cls") 
+        limpa_console() 
