@@ -1,8 +1,8 @@
 from classes import * # importa as classes do arquivo Classe
 import os #importa biblioteca
 
-gerente_nome = "1" #nome predefinido para o gerente 
-gerente_cpf = "1" #cpf predefinido para o gerente
+gerente_nome = "mateus ribeiro" #nome predefinido para o gerente 
+gerente_cpf = "110211310107" #cpf predefinido para o gerente
 
 banco =  Banco() #cria uma instância do banco para gerenciar contas e clientes 
 contas = [] #cria uma lista que armazena todas as contas
@@ -18,7 +18,7 @@ def menu():#Funções do menu principal, onde pode realizar o cadastro, o login,
     print("3 - SAIR")#Caso o cliente digite 3 ele saira do sistema
     print("=" * 30) #exibe mais uma linha separada com "="
     escolha = input("--->")#Váriavel para o cliente realizar a sua escolha
-    return escolha #retorna a variavel escolha 
+    return escolha #retorna a variavel escolha, "salva o valor"
 
 #limpa console 
 def limpa_console():
@@ -33,15 +33,16 @@ def cadastro():
     print("=" * 60) #cria outra linha de separação
     nome = input("INSIRA O SEU NOME COMPLETO:\n--->") #inserir nome 
     cpf = input("INSIRA O SEU CPF:\n--->") #inserir cpf
+    #instancia
     novo_cliente = Cliente(nome, cpf, banco) #cria uma nova instancia para o cliente com o nome e cpf fornecidos 
     banco.adicionar_cliente(novo_cliente) #adiciona o "novo_cliente" a lista "novo cliente"
     clientes.append(novo_cliente) #adiciona também a lista de "clientes"
     print("CADASTRO REALIZADO COM SUCESSO!") #confirmação
     limpa_console() 
 
-
+ 
 def login():
-    global banco, gerente_nome, gerente_cpf#Define as variaveis banco, gerente_nome, gerente_cpf global 
+    global banco, gerente_nome, gerente_cpf #Define as variaveis banco, gerente_nome, gerente_cpf global 
     limpa_console()
     sair = None
     while sair is None:
@@ -122,7 +123,7 @@ def conta_principal(cliente):
                         criar_perfil() #def criar perfil
 
                     case 4:
-                        pass
+                        excluirperfil()
                         
                     case 5:
                         sair = 0  
@@ -133,9 +134,11 @@ def conta_principal(cliente):
                         if cliente:
                                 print(f"Transações do cliente {cliente.get_nome()}:")
                                 for conta in cliente.get_contas(): #exibe transação de todas as contas  
-                                    print(f"Conta {'Corrente' if isinstance(conta, ContaCorrente) else 'Poupança'}:")
+                                    print(f"Conta {'Corrente' if isinstance(conta, ContaCorrente) else 'Poupança'}:") # Imprime "Conta Corrente" se a variável 'conta' for uma instância de ContaCorrente, caso contrário imprime "Conta Poupança".
+
                                     for transacao in conta._extrato.listar_transacoes(): #exibe as transações 
-                                        print(f"Tipo: {transacao.tipo} - Valor: R$ {transacao.valor:.2f}")
+                                        print(f"Tipo: {transacao.tipo} - Valor: R$ {transacao.valor:.2f}") # Exibe o tipo e o valor da transação formatado em duas casas decimais
+                                                                                                           # 2f serve para exibir os valores decimais 
 
                     case _: 
                         print("Opção inválida! Tente novamente.")
@@ -191,8 +194,9 @@ def trocar_conta():
 
 
             for cliente in banco._clientes: # Verifica se o CPF e nome correspondem a um cliente registrado
-                if cliente.get_cpf() == cpf and cliente.get_nome() == nome:
-                    print(f"BEM VINDO, {cliente.get_nome()}!")
+                if cliente.get_cpf() == cpf and cliente.get_nome() == nome: # Verifica se o CPF e o nome fornecidos correspondem ao cliente
+
+                    print(f"BEM VINDO, {cliente.get_nome()}!") # Exibe uma mensagem de boas-vindas personalizada para o cliente
                     conta_principal(cliente)  # Função específica para o cliente
                     return
             print("Nome ou CPF incorretos. Tente novamente.")
@@ -283,20 +287,22 @@ def corrente(conta_corrente):
                             print("Por favor, insira um número válido.")
                             limpa_console()
             case '4':
-                  valor_transferencia = float(input("Insira o valor que deseja transferir: "))
-                  cpf_destino = input("Insira o CPF do destinatário: ")
-                  cliente_destino = banco.obter_cliente(cpf_destino) # Busca o cliente de destino pelo CPF
-                  if cliente_destino:
-                        conta_destino = cliente_destino.get_conta_corrente()   # Obtém a conta corrente do destinatário
-                        sucesso = conta_corrente.transferir(valor_transferencia, conta_destino) # Realiza a transferência
+                    valor_transferencia = float(input("Insira o valor que deseja transferir: "))  # Solicita o valor
+                    cpf_destino = input("Insira o CPF do destinatário: ")  # Solicita o CPF do destinatário
+                    cliente_destino = self.encontrar_cliente(cpf_destino)  # Busca o cliente de destino pelo CPF
+                    if cliente_destino:  # Verifica se o cliente de destino existe
+                        conta_destino = cliente_destino.get_conta_corrente()  # Obtém a conta corrente do destinatário
+                        cliente_origem = self._clientes[0]  # Para este exemplo, usa o primeiro cliente
+                        conta_origem = cliente_origem.get_conta_corrente()  # Obtém a conta corrente do cliente de origem
+                        sucesso = conta_origem.transferir(valor_transferencia, conta_destino)  # Realiza a transferência
                         if sucesso is True:
                             print(f"Transferência de R$ {valor_transferencia:.2f} realizada com sucesso para {cliente_destino.get_nome()}!")
                         else:
-                            print(sucesso)
-                  else:
-                         print("Cliente não encontrado.")
+                            print(sucesso)  # Exibe a mensagem de erro retornada
+                    else:
+                        print("Cliente não encontrado.")  # Mensagem de er
+                        
                     
-                
             case '5':
                 print("Saindo...")
                 limpa_console()
@@ -323,13 +329,13 @@ def gerente():
             escolha = int(input("---> "))
             match escolha:
                 case 1:
-                    listar_clientes()
+                    listar_clientes() #def
                 case 2:
-                    adicionar_cliente()
+                    adicionar_cliente() #def
                 case 3:
-                    gerente_excluir()
+                    gerente_excluir() #def
                 case 4:
-                    extrato()
+                    extrato() #def
                 case 5:
                     break
                 case _:
@@ -341,10 +347,10 @@ def gerente():
 def listar_clientes():
     limpa_console()
     print("LISTA DE TODOS OS CLIENTES:")
-    if not clientes:
+    if not clientes: # Verifica se a lista de clientes está vazia
         print("Nenhum cliente cadastrado.")
     else:
-        for cliente in clientes:
+        for cliente in clientes: # Percorre a lista de clientes e imprime o nome e CPF de cada um
             print(f"Nome: {cliente.get_nome()} - CPF: {cliente.get_cpf()}")
     limpa_console()
 
@@ -354,26 +360,29 @@ def adicionar_cliente():
     nome = input("INSIRA O NOME DO NOVO USUÁRIO \n -->")
     cpf = input("INSIRA O CPF DO NOVO USUÁRIO \n -->")
 
-    if banco.obter_cliente(cpf):
+    if banco.obter_cliente(cpf): # Verifica se já existe um cliente cadastrado com o mesmo CPF
         print("ERRO: Já existe um cliente com este CPF cadastrado.")
     else:
+         # Cria um novo cliente com os dados fornecidos
         novo_cliente = Cliente(nome, cpf, banco)
-        banco.adicionar_cliente(novo_cliente)
-        clientes.append(novo_cliente)
+        banco.adicionar_cliente(novo_cliente) # Adiciona o novo cliente ao banco de dados
+        clientes.append(novo_cliente) # Adiciona o novo cliente à lista de clientes
         print("CADASTRO REALIZADO COM SUCESSO!")
     limpa_console()
 
 def excluir_cliente():
-    limpa_console()
-    print("EXCLUIR PERFIL")
-    cpf = input("INSIRA O CPF QUE VOCÊ DESEJA EXCLUIR:\n---> ")
-    cliente = banco.obter_cliente(cpf) 
-    if cliente:  
-        banco.remover_cliente(cliente)  
-        clientes.remove(cliente)  
-        print(f"Cliente {cliente.get_nome()} removido com sucesso.")
+    limpa_console()  
+    print("EXCLUIR CLIENTE")  
+    cpf = input("INSIRA O CPF QUE VOCÊ DESEJA EXCLUIR:\n---> ")  # Solicita o CPF do cliente
+    cliente = banco.obter_cliente(cpf)  # Busca o cliente no banco
+    if cliente:  # Se o cliente for encontrado
+        for conta in cliente.get_contas():  # Itera sobre todas as contas do cliente
+            cliente.remover_conta(conta)  # Remove a conta do cliente
+        banco.remover_cliente(cpf)  # Remove o cliente do banco
+        clientes.remove_conta(cliente)  # Remove o cliente da lista local
+        print("Perfil do cliente removido com sucesso.")  # Mensagem de sucesso
     else:
-        print("Cliente não encontrado.")
+        print("CLIENTE NÃO ENCONTRADO.")  # Mensagem de erro se o cliente não for encontrado
     os.system("pause")
 
 def extrato():
@@ -382,21 +391,50 @@ def extrato():
     cliente = banco.obter_cliente(cpf)
     if cliente:
         print(f"Transações do cliente {cliente.get_nome()}:")
-        for conta in cliente.get_contas():
-            print(f"Conta {'Corrente' if isinstance(conta, ContaCorrente) else 'Poupança'}:")
-            for transacao in conta._extrato.listar_transacoes():
+        for conta in cliente.get_contas(): # Itera sobre todas as contas do cliente
+            print(f"Conta {'Corrente' if isinstance(conta, ContaCorrente) else 'Poupança'}:") # Identifica o tipo da conta (Corrente ou Poupança) e imprime
+            for transacao in conta._extrato.listar_transacoes(): # Itera sobre todas as transações da conta e as imprime
                 print(f"Tipo: {transacao.tipo} - Valor: R$ {transacao.valor:.2f}")
                 limpa_console()
     else:
         print("Cliente não encontrado.")
     limpa_console()
 
-
 def gerente_excluir():
+    limpa_console()  
+    print("EXCLUIR CLIENTE")  
+    cpf = input("INSIRA O CPF QUE VOCÊ DESEJA EXCLUIR:\n---> ")  # Solicita o CPF do cliente
+    cliente = banco.obter_cliente(cpf)  # Obtém o cliente pelo CPF
+    if cliente:
+        for conta in cliente.get_contas():  # Itera sobre as contas do cliente
+            cliente.remover_conta(conta)  # Remove a conta do cliente
+        banco.remover_cliente(cpf)  # Remove o cliente do banco
+        print("Perfil do cliente removido com sucesso.")  # Mensagem de sucesso
+    else:
+        print("CLIENTE NÃO ENCONTRADO.")  # Mensagem de erro se o cliente não for encontrado
+    os.system("pause")  # Pausa para que o usuário possa ler a mensagem
+
+
+def excluirperfil():
     limpa_console()
-    print("EXCLUIR CLIENTE")
-    cpf = input("INSIRA O CPF QUE VOCÊ DESEJA EXCLUIR:\n---> ")
-    banco.remover_cliente(cpf)  
-    os.system("pause")
+    cpf_cliente = input("DIGITE O CPF DA CONTA QUE VOCê DESEJA EXCLUIR?:\n---> ")
+    banco.remover_cliente(cpf_cliente)
+    return menu()
+
+
+def transferir():
+    limpa_console()
+    print("--- ÁREA DE TRANSFERÊNCIA ---")
+    print("")
+    
+
+
+
+
+
+
+
+
+
 
 #########################################################################################
