@@ -36,7 +36,14 @@ class Banco:#Cria uma classe utilizando o encapsulamento, ligadas a métodos esp
         if cliente: #Caso o cliente esteja no obter_cliente
             cliente.excluir_conta() #Irá excluir a conta dele
         else: #Caso o cliente não esteja no obter_cliente
-            print("CLIENTE NÃO ENCONTRADO.") 
+            print("CLIENTE NÃO ENCONTRADO.")
+
+    def encontrar_cliente(self, cpf):
+        for cliente in self._clientes:
+            if cliente.cpf == cpf:
+                return cliente
+        return None
+    
 
 
 class Transacao:#Cria a classe Transação
@@ -85,7 +92,12 @@ class Conta(ABC):
         self._extrato.adicionar_transacao(transacao) #Adiciona uma transação ao extrato da conta.
     
     def transferencia(self, conta_destino, valor: float): #Método abstrato para transferir um valor para outra conta.
-        pass
+        if valor > self._saldo:
+            ValueError("Saldo insuficiente")
+        self._saldo -= valor
+        conta_destino.depositar(valor)
+        self.adicionar_transacao(Transacao("Saque", valor))
+        conta_destino.adicionar_transacao(f"Transferência recebida de {self.get_conta_corrente()}", valor)
     
     def adicionar_transacao(self, transacao: Transacao): #Adiciona uma transação ao extrato da conta.
         self._extrato.adicionar_transacao(transacao)  
@@ -107,13 +119,10 @@ class ContaCorrente(Conta):
         return f"Depósito de R$ {valor_saque:.2f} realizado com sucesso!"
         
     def transferir(self, valor: float, conta_destino):
-       if valor <= self._saldo:  # Verifica se há saldo suficiente para a transferência
-            self.sacar(valor)  # Tenta sacar o valor
-            conta_destino.depositar(valor)  # Deposita o valor na conta de destino
-            return True  # Retorna True se a transferência for bem-sucedida
-       else: 
-            return "Transferência deu errado! Saldo insuficiente."
-
+      self.sacar(valor)
+      conta_destino.depositar(valor)
+      self._extrato.adicionar_transacao(f"Tranferência para {conta_destino}", valor)
+    
     def depositar(self,valor):
         # Verifica se o valor do depósito é menor ou igual a zero
         if valor <= 0:
@@ -123,6 +132,9 @@ class ContaCorrente(Conta):
         self.adicionar_transacao(transacao)
         return f"Depósito de R$ {valor:.2f} realizado com sucesso!"  # Retorna uma mensagem de sucesso informando o valor do depósito
     
+    def get_conta_corrente(self):
+        return "Conta Corrente"
+        
 class ContaPoupanca(Conta):
         def __init__(self, saldo_poupanca: float = 0.0): #Inicializa uma nova conta poupança com um saldo inicial.
             super().__init__(saldo_poupanca) #é utilizada para chamar métodos de uma classe pai (superclasse) a partir de uma classe filha (subclasse)

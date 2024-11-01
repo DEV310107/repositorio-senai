@@ -275,32 +275,31 @@ def corrente(conta_corrente):
                     print("Por favor, insira um número válido.")
                     limpa_console()
             case '3':
-                while True:
                     try:
                             deposito_valor = float(input("Insira o valor que deseja depositar: "))
                             saldo_corrente = conta_corrente.depositar(deposito_valor)
                             print(saldo_corrente) 
                             print(f"Saldo final da conta corrente: R$ {conta_corrente.consultar_saldo():.2f}")
                             limpa_console()
-                            break
                     except ValueError:
                             print("Por favor, insira um número válido.")
                             limpa_console()
             case '4':
-                    valor_transferencia = float(input("Insira o valor que deseja transferir: "))  # Solicita o valor
-                    cpf_destino = input("Insira o CPF do destinatário: ")  # Solicita o CPF do destinatário
-                    cliente_destino = self.encontrar_cliente(cpf_destino)  # Busca o cliente de destino pelo CPF
-                    if cliente_destino:  # Verifica se o cliente de destino existe
-                        conta_destino = cliente_destino.get_conta_corrente()  # Obtém a conta corrente do destinatário
-                        cliente_origem = self._clientes[0]  # Para este exemplo, usa o primeiro cliente
-                        conta_origem = cliente_origem.get_conta_corrente()  # Obtém a conta corrente do cliente de origem
-                        sucesso = conta_origem.transferir(valor_transferencia, conta_destino)  # Realiza a transferência
-                        if sucesso is True:
-                            print(f"Transferência de R$ {valor_transferencia:.2f} realizada com sucesso para {cliente_destino.get_nome()}!")
-                        else:
-                            print(sucesso)  # Exibe a mensagem de erro retornada
-                    else:
-                        print("Cliente não encontrado.")  # Mensagem de er
+                    cpf_destino = input("Digite o CPF do cliente que você deseja enviar: ")
+                    cliente_destino = banco.encontrar_cliente(cpf_destino)
+                    conta_destino = cliente_destino.get_contas()
+
+                    if not cliente_destino:
+                        print("Cliente não encontrado") 
+
+                    conta_destino = conta_destino[0] 
+                    valor = float(input("Digite o valor para transferir:"))
+
+                    try:
+                        conta_corrente.transferir(conta_destino, valor)
+                        print("Transfêrencia realizada")
+                    except ValueError as e:
+                        print(f"Erro: {e}")
                         
                     
             case '5':
@@ -351,7 +350,7 @@ def listar_clientes():
         print("Nenhum cliente cadastrado.")
     else:
         for cliente in clientes: # Percorre a lista de clientes e imprime o nome e CPF de cada um
-            print(f"Nome: {cliente.get_nome()} - CPF: {cliente.get_cpf()}")
+            print(f"Nome: {cliente.get_nome()} - CPF: {cliente.get_cpf()}") 
     limpa_console()
 
 def adicionar_cliente():
@@ -418,23 +417,7 @@ def gerente_excluir():
 def excluirperfil():
     limpa_console()
     cpf_cliente = input("DIGITE O CPF DA CONTA QUE VOCê DESEJA EXCLUIR?:\n---> ")
-    banco.remover_cliente(cpf_cliente)
-    return menu()
-
-
-def transferir():
-    limpa_console()
-    print("--- ÁREA DE TRANSFERÊNCIA ---")
-    print("")
+    banco.remover_cliente(cpf_cliente) # Chama o método `remover_cliente` do objeto `banco` para excluir o cliente com o CPF informado
+    return menu() # Retorna à função `menu`, possivelmente para exibir novamente as opções disponíveis ao usuário
     
-
-
-
-
-
-
-
-
-
-
 #########################################################################################

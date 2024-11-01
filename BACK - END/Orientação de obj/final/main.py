@@ -16,6 +16,12 @@ while sair != 0:#Define a variável 'sair' para controlar o loop do menu
 
             case "3":#Caso a escolha for igual a 3 irá entrar na case
                 sair = 0 #Define sair como 0 para finalizar o loop
+           
+            case _: #case defalt[]
+                        print("Opção inválida! Tente novamente.")
+
+
+            
                       
     except Exception as e: #O bloco except é executado se ocorrer uma exceção no bloco try
         print(f"Ocorreu um erro: {e}") #informa o usuario sobre o erro

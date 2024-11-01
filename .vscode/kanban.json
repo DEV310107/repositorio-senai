@@ -1,0 +1,42 @@
+{
+    "title": "Kanban",
+    "cols": [
+        {
+            "title": "Bugs",
+            "tasks": [
+                {
+                    "text": "Listas de clientes ",
+                    "id": "auwlap6tx7vuefid0mexuw4p"
+                }
+            ],
+            "id": "bnv1s53w95acwk2fzyexx5ju",
+            "color": "#eb144c"
+        },
+        {
+            "title": "a fazer",
+            "tasks": [
+                {
+                    "text": "Terminar as Transaçoes",
+                    "id": "omfru91big0leixvhd5vutty"
+                }
+            ],
+            "id": "b54jp4igwjydw0ww0evwulr5",
+            "color": "#fcb900"
+        },
+        {
+            "title": "fazendo",
+            "tasks": [],
+            "id": "inxetnpb2s6o374vk9531fkk",
+            "color": "#0693e3"
+        },
+        {
+            "title": "pront",
+            "tasks": [],
+            "id": "zkt7f7auxs7j00szzzzo8jn2",
+            "color": "#00d084"
+        }
+    ],
+    "autosave": true,
+    "saveToFile": true,
+    "timestamp": 1730479175591
+}
