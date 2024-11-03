@@ -1,0 +1,27 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.s01 {
+    background-color: black;
+    color: white;
+}
+
+.cabeca {
+    display: flex;
+    justify-content: space-between;
+}
+
+.op {
+    display: flex;
+    gap: 30px;
+}
+
+.op a {
+    color: white;
+}
+

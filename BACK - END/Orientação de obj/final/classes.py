@@ -1,184 +1,124 @@
-from abc import ABC, abstractmethod #Importa uma classe abstrata e seus métodos.
-
-####################### encapsulamento #######################
-class Banco:#Cria uma classe utilizando o encapsulamento, ligadas a métodos especiais chamados getters e setters, que irão retornar e setar o valor da propriedade.
-    def __init__(self): #Método construtor da classe banco
-        self._clientes = [] #Cria uma lista clientes, onde serão armazenados cada cliente do sistema, porém os clientes podem existir sem a classe banco(agregação)
-
-    def adicionar_cliente(self, cliente):#Função para adicionar um cliente no sistema.
-        self._clientes.append(cliente)#Adicionar os clientes na lista do cliente.
-
-    def remover_cliente(self, cpf: str): #Função para remover um cliente do sistema.
-        for cliente in self._clientes: #Ira iterar sobre a lista cliente
-            if cliente.get_cpf() == cpf:  #Verifica se o cpf fornecido for igual o cpf de um cliente já cadastrado num sistema.
-                self._clientes.remove(cliente) #Remove o cliente informado da lista.
-                print(f"Cliente removido com sucesso.") #Imprime caso dê certo a remoção
-                return
-            else:
-                print(f"Cliente não encontrado.") #Caso não ache o cliente no sistema, ele ira imprimir.
-
-    def obter_cliente(self, cpf: str): #Função para encontrar um cliente no sistema.
-        for cliente in self._clientes: #Ira iterar sobre a lista cliente
-            if cliente.get_cpf() == cpf: #Verifica se o cpf fornecido for igual o cpf de um cliente já cadastrado num sistema.
-                return cliente #Retorna o cliente informado.
-        return None #Caso não ache o cliente, não irá retornar nada.
-    
-    def excluir_conta_cliente(self, cpf_cliente: str):  # Função para excluir uma conta de um cliente no sistema.
-        cliente = self.obter_cliente(cpf_cliente)  # Obtém o cliente pelo CPF fornecido.
-        if cliente:  # Se o cliente foi encontrado
-            cliente.excluir_conta()  # Chama o método para excluir a conta do cliente.
-        else:  # Se o cliente não foi encontrado
-            print("CLIENTE NÃO ENCONTRADO.")
-    
-
-    def excluir_conta_cliente(self, cpf_cliente: str): #Função para excluir uma conta de um cliente no sistema, do gerente, pois ele tem acesso a todas as contas
-        cliente = self.obter_cliente(cpf_cliente) # Obtém o cliente pelo CPF fornecido, utilizando a função'obter_cliente'
-        if cliente: #Caso o cliente esteja no obter_cliente
-            cliente.excluir_conta() #Irá excluir a conta dele
-        else: #Caso o cliente não esteja no obter_cliente
-            print("CLIENTE NÃO ENCONTRADO.")
-
-    def encontrar_cliente(self, cpf):
-        for cliente in self._clientes:
-            if cliente.cpf == cpf:
-                return cliente
-        return None
-    
-
-
-class Transacao:#Cria a classe Transação
-    def __init__(self, tipo: str, valor: float):#Inicializa o construtor 
-        self.tipo = tipo #Atribui o tipo de transação ("Saque" ou "Deposito")
-        self.valor = valor #Atribui o valor de transação(100.00)
-
-    def __str__(self):
-        return f"{self.tipo}: R$ {self.valor:.2f}"#Retorna a transação feita, com o tipo e o valor.
-    
-class Extrato:
-    def __init__(self):
-        # Inicializa um objeto da classe Extrato, que será responsável por armazenar as transações.
-        self._transacoes = [] # transacoes é uma lista que irá conter todas as transações realizadas (sacados e depósitos) para um cliente específico.
-
-
-    def adicionar_transacao(self, transacao: Transacao):  # Função para adicionar uma nova transação  
-        self._transacoes.append(transacao)  # Adiciona a nova transação à lista de transações
-
-    def listar_transacoes(self):
-        # Retorna a lista de transações do extrato
-        return self._transacoes 
-    
-    def imprimir_extrato(self):
-        print("Extrato de Transações:")
-        for transacao in self._transacoes: # Itera sobre cada transação na lista de transações.
-            print(f"Tipo: {transacao.tipo} - Valor: R$ {transacao.valor:.2f}")   # Imprime o tipo da transação (saca ou depósito) e seu valor formatado em reais.
-
-###################### Abstrto #######################
+from abc import ABC, abstractmethod
+# Classe abstrata que representa uma conta bancária
 class Conta(ABC):
-    #Classe abstrata que representa uma conta bancária, definindo os métodos que as contas concretas devem implementar
-    @abstractmethod
     def __init__(self, saldo: float = 0.0):
-        #Inicializa uma nova instância da conta com um saldo inicial, sendo 0 
-        self._saldo = saldo # Armazena o saldo atual da conta.
-        self._extrato = Extrato() # Cria um objeto Extrato para armazenar transações.
+        self._saldo = saldo  # Saldo inicial da conta
+        self._extrato = Extrato()  # Extrato para registrar as transações
+
+    @abstractmethod
+    def depositar(self, valor: float):
+        pass  # Método para depositar dinheiro na conta
+
+    @abstractmethod
+    def sacar(self, valor: float):
+        pass  # Método para sacar dinheiro da conta
+
+    @abstractmethod
+    def transferir(self, conta_destino, valor: float):
+        pass  # Método para transferir dinheiro para outra conta
 
     def consultar_saldo(self):
-        return self._saldo #Retorna o saldo atual da conta.
-    
-    @abstractmethod
-    def depositar(self, valor: float): #Método abstrato para depositar um valor na conta.
-        pass
+        return self._saldo  # Retorna o saldo atual da conta
 
-    def adicionar_transacao(self, transacao):
-        self._extrato.adicionar_transacao(transacao) #Adiciona uma transação ao extrato da conta.
-    
-    def transferencia(self, conta_destino, valor: float): #Método abstrato para transferir um valor para outra conta.
-        if valor > self._saldo:
-            ValueError("Saldo insuficiente")
-        self._saldo -= valor
-        conta_destino.depositar(valor)
-        self.adicionar_transacao(Transacao("Saque", valor))
-        conta_destino.adicionar_transacao(f"Transferência recebida de {self.get_conta_corrente()}", valor)
-    
-    def adicionar_transacao(self, transacao: Transacao): #Adiciona uma transação ao extrato da conta.
-        self._extrato.adicionar_transacao(transacao)  
-
-    def listar_transacoes(self): #Retorna a lista de transações realizadas na conta.
-        return self._extrato.listar_transacoes()
-
-###################### Herança #######################
+# Conta Corrente, herda de Conta
 class ContaCorrente(Conta):
-    def __init__(self, saldo_corrente: float = 0.0):
-        super().__init__(saldo_corrente) #permite chamar métodos de classes pai de forma simples e fácil, principalmente em hierarquias de herança complexas
+    def __init__(self, saldo: float = 0.0):
+        super().__init__(saldo)  # Chama o construtor da classe Conta
 
-    def sacar(self, valor_saque: float):
-        if valor_saque <= 0:
-            return "O valor do depósito deve ser positivo."
-        self._saldo -= valor_saque
-        transacao_saque = Transacao("Saque", valor_saque)
-        self.adicionar_transacao(transacao_saque)
-        return f"Depósito de R$ {valor_saque:.2f} realizado com sucesso!"
-        
-    def transferir(self, valor: float, conta_destino):
-      self.sacar(valor)
-      conta_destino.depositar(valor)
-      self._extrato.adicionar_transacao(f"Tranferência para {conta_destino}", valor)
-    
-    def depositar(self,valor):
-        # Verifica se o valor do depósito é menor ou igual a zero
-        if valor <= 0:
-            return "O valor do depósito deve ser positivo."
-        self._saldo += valor # Adiciona o valor do depósito ao saldo atual da conta
-        transacao = Transacao("Deposito", valor)
-        self.adicionar_transacao(transacao)
-        return f"Depósito de R$ {valor:.2f} realizado com sucesso!"  # Retorna uma mensagem de sucesso informando o valor do depósito
-    
-    def get_conta_corrente(self):
-        return "Conta Corrente"
-        
+    def depositar(self, valor: float):
+        self._saldo += valor  # Adiciona o valor ao saldo
+        self._extrato.adicionar_transacao("Depósito", valor)  # Registra a transação
+
+    def sacar(self, valor: float):
+        if valor <= self._saldo:
+            self._saldo -= valor  # Deduz o valor do saldo
+            self._extrato.adicionar_transacao("Saque", valor)  # Registra a transação
+        else:
+            print("Saldo insuficiente.")  # Informa que não tem saldo suficiente
+
+    def transferir(self, conta_destino, valor: float):
+        if valor <= self._saldo:
+            self._saldo -= valor  # Reduz o valor do saldo
+            conta_destino.depositar(valor)  # Vai pra outra conta
+            self._extrato.adicionar_transacao("Transferência", valor)  # Registra a transação
+        else:
+            print("Saldo insuficiente.")  # Informa que não tem saldo suficiente
+
+# Conta Poupança, também herda de Conta
 class ContaPoupanca(Conta):
-        def __init__(self, saldo_poupanca: float = 0.0): #Inicializa uma nova conta poupança com um saldo inicial.
-            super().__init__(saldo_poupanca) #é utilizada para chamar métodos de uma classe pai (superclasse) a partir de uma classe filha (subclasse)
+    def __init__(self, saldo: float = 0.0):
+        super().__init__(saldo)  # Chama o construtor da classe Conta
 
-        def sacar(self, valor_saque: float):
-            # Método para realizar um saque da conta poupança.
-            if valor_saque <= 99: #Caso o saldo for menor que 100, ele não podera realizar um saque
-              return "Saldo insuficiente para realizar o saque. O saldo deve ser superior a R$ 100"
-            self._saldo -= valor_saque #Retira o valor informado do saque, no saldo da conta.
-            transacao_saque = Transacao("Saque", valor_saque) #Salva como uma transação, e gera um extrato, onde está sendo passado o transa
-            self.adicionar_transacao(transacao_saque) #Adiciona a transação ao adicionar uma transação
-            return f"Depósito de R$ {valor_saque:.2f} realizado com sucesso!"
+    def depositar(self, valor: float):
+        self._saldo += valor  # Adiciona o valor ao saldo
+        self._extrato.adicionar_transacao("Depósito", valor)  # Registra a transação
 
-        def depositar(self, valor: float):
-            if valor <= 0:
-              return "O valor do depósito deve ser positivo."
-            self._saldo += valor
-            transacao = Transacao("Deposito", valor)
-            self.adicionar_transacao(transacao)
-            return f"Depósito de R$ {valor:.2f} realizado com sucesso!"
+    def sacar(self, valor: float):
+        if self._saldo - valor >= 99: #Só é possível sacar acima de 100
+            self._saldo -= valor  # Reduz o valor do saldo
+            self._extrato.adicionar_transacao("Saque", valor)  # Registra a transação
+        else:
+            print("Saldo insuficiente ou abaixo do mínimo permitido.")  # Informa sobre saldo insuficiente
+    
+    def transferir(self, conta_destino, valor: float):
+        if valor <= self._saldo:
+            self._saldo -= valor  # Reduz o valor do saldo
+            conta_destino.depositar(valor)  # Vai pra outra conta
+            self._extrato.adicionar_transacao("Transferência", valor)  # Registra a transação
+        else:
+            print("Saldo insuficiente.")  # Informa que não tem saldo suficiente
 
-###################### agregação #######################
+# Representa um cliente do banco
 class Cliente:
-    def __init__(self, nome: str, cpf: str, banco = Banco): #Método construtor da classe Cliente
-        self._nome = nome #Nome do cliente
-        self._cpf = cpf #CPF do cliente
-        self._contas = [] #Lista onde será armazenado o cliente, que será nas contas
-        self._banco = banco #Assosiação da classe Banco, onde possui os clientes
+    def __init__(self, nome: str, cpf: str):
+        self._nome = nome  # Nome do cliente
+        self._cpf = cpf  # CPF do cliente
+        self._contas = []  # Lista de contas do cliente
 
-    def get_nome(self):#Retorna o nome do cliente
-        return self._nome
+    def adicionar_conta(self, conta: Conta):
+        self._contas.append(conta)  # Adiciona uma conta na lista do cliente
 
-    def get_cpf(self):#Retorna o cpf do cliente
-        return self._cpf
+    def remover_conta(self, conta: Conta):
+        self._contas.remove(conta)  # Remove uma conta da lista do cliente
 
-    def set_nome(self, nome: str):#Setta o nome do cliente
-        self._nome = nome
+    def get_nome(self):
+        return self._nome  # Retorna o nome do cliente
 
-    def adicionar_conta(self, conta: Conta):#Adiciona uma conta á lista de contar
-        self._contas.append(conta)
+    def get_cpf(self):
+        return self._cpf  # Retorna o CPF do cliente
 
-    def remover_conta(self, conta: Conta):#Remove uma conta á lista de contas
-        self._contas.remove(conta)
+    def get_contas(self):
+        return self._contas  # Retorna todas as contas do cliente
 
-    def get_contas(self):#Retorna as todas as contas do sistema.
-        return self._contas
-   
+# Classe para gerenciar o extrato de transações
+class Extrato:
+    def __init__(self):
+        self._transacoes = []  # Lista de transações
+
+    def adicionar_transacao(self, descricao: str, valor: float):
+        self._transacoes.append(f"{descricao}: R$ {valor:.2f}")  # Adiciona uma transação formatada
+
+    def consultar_extrato(self):
+        return self._transacoes  # Retorna todas as transações
+
+# Classe que representa o banco e gerencia os clientes
+class Banco:
+    def __init__(self):
+        self._clientes = []  # Lista de clientes do banco
+
+    def adicionar_cliente(self, cliente: Cliente):
+        self._clientes.append(cliente)  # Adiciona um cliente na lista
+
+    def remover_cliente(self, cpf: str):
+        for cliente in self._clientes:
+            if cliente.get_cpf() == cpf:
+                self._clientes.remove(cliente)  # Remove o cliente da lista
+                print(f"Cliente {cliente.get_nome()} removido com sucesso.")
+                return
+        print("Cliente não encontrado.")  # Informa que o cliente não foi encontrado
+
+    def obter_cliente(self, cpf: str):
+        for cliente in self._clientes:
+            if cliente.get_cpf() == cpf:
+                return cliente  # Retorna o cliente encontrado
+        return None  # Se não encontrar, retorna None
