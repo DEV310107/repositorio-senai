@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.sec01 {  /* utilizamos um gerador gradient para o fundo da tela */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% ) no-repeat;
+    height: 95vh;
+  }
+
+.sec02 {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(88, 20, 20) 0%, rgba(53, 55, 50) 35%, rgba(206, 38, 38) 100% ) no-repeat;
+    height: 95vh;
+    display: flex;
+    margin-top: 2px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.cabeca {
+    display: flex;
+    align-items: center;
+}
+ 
+
+.all_navegacao {
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-left:600px;
+}
+
+.img_sec02 {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 90px;
+    height: 60px;
+}
+
+.all_navegacao a {
+    color: white;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------------------*/
+.edit_txt_sec01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 50px;
+}
+
+.edit_txt_sec01 h1 {
+    display: flex;
+    font-size: 70px;
+    color: white;
+}
+
+.edit_txt_sec01 button {
+    width: 100px;
+    height: 50px;
+    background-color: #0426ad;
+    color: white;
+}
+
+.img_pele {
+    width: 495px;
+    height: 495px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+
+.edit_all {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.edit_txt {
+    display: flex;
+    flex-direction: column;
+    color: white ;
+}
+
+.edit_txt p {
+    font-size: 30px;
+}
+
+.edit_txt h1 {
+    font-size: 60px;
+}
+
+.imagem_sec02 {
+    width: 500px;
+    height: 600px;
+}
