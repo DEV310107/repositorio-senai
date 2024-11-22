@@ -5,8 +5,8 @@
             "title": "Bugs",
             "tasks": [
                 {
-                    "text": "Listas de clientes ",
-                    "id": "auwlap6tx7vuefid0mexuw4p"
+                    "text": "Pagina de início",
+                    "id": "j03sjf4xoy5do82ip3k0vc9d"
                 }
             ],
             "id": "bnv1s53w95acwk2fzyexx5ju",
@@ -16,8 +16,28 @@
             "title": "a fazer",
             "tasks": [
                 {
-                    "text": "Terminar as Transaçoes",
-                    "id": "omfru91big0leixvhd5vutty"
+                    "text": "Codificação",
+                    "id": "u4f3qanra815lqm7j3x46ysq"
+                },
+                {
+                    "text": "Salvar imagens que vamos usar no trabalho\n",
+                    "id": "oaofx141m9zjmh60ueo1a6cf"
+                },
+                {
+                    "text": "colocar logo com link para inicio\n",
+                    "id": "hjqvw6kndfrihbhwxm9qyx6r"
+                },
+                {
+                    "text": "Pagina de planos ",
+                    "id": "droexmet619qrw1uvharxhmy"
+                },
+                {
+                    "text": "Pagina Contatos ",
+                    "id": "ss6391bhq54fgo8kcepea8rr"
+                },
+                {
+                    "text": "Pagina sobre\n",
+                    "id": "tmrhqe1h5tk60gjc2p3b1q9v"
                 }
             ],
             "id": "b54jp4igwjydw0ww0evwulr5",
@@ -25,18 +45,44 @@
         },
         {
             "title": "fazendo",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "Reunião",
+                    "id": "gxpumabol3vlok541hugz4xh"
+                },
+                {
+                    "text": "Projeto alta fidelidade",
+                    "id": "l3lgmxcpdpe97u438ve5cqa1"
+                },
+                {
+                    "text": "Pagina de atletas",
+                    "id": "ercnyt93beyxi9b5t2d61wnx"
+                }
+            ],
             "id": "inxetnpb2s6o374vk9531fkk",
             "color": "#0693e3"
         },
         {
             "title": "pront",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "Documentação",
+                    "id": "xvi0nlnb386erpux3gn7j5mx"
+                },
+                {
+                    "text": "Projeto baixa fidelidade",
+                    "id": "uv42g4nr9onjeg6k3ow8utcl"
+                },
+                {
+                    "text": "Requisitos funcionais e não funcionais",
+                    "id": "r06auqyio2840o2p78yc0l42"
+                }
+            ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1730479175591
+    "timestamp": 1732280435540
 }
