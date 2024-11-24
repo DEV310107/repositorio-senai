@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-content: center; /* Centraliza os cards verticalmente */
+    padding: 20px;
+    height: calc(100vh - 120px); /* Altura total menos o header */
+}
+
+.all_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    width: 200px; /* Define largura do card */
+    height: 300px; /* Aumenta a altura do card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradientes para os cards */
+.card-laranja {
+    background: linear-gradient(to bottom right, #ffa500, #ff4500);
+}
+
+.card-vermelho {
+    background: linear-gradient(to bottom right, #c70039, #ff5733);
+}
+
+.card-rosa {
+    background: linear-gradient(to bottom right, #ff69b4, #ff1493);
+}
+
+.card-ouro {
+    background: linear-gradient(to bottom right, #daa520, #ffd700);
+}
+
+.card-azul {
+    background: linear-gradient(to bottom right, #6495ed, #1e90ff);
+}
+
+.card-verde-escuro {
+    background: linear-gradient(to bottom right, #008080, #20b2aa);
+}
+
+.card-cinza {
+    background: linear-gradient(to bottom right, #696969, #a9a9a9);
+}
+
+.card-verde {
+    background: linear-gradient(to bottom right, #32cd32, #228b22);
+}
