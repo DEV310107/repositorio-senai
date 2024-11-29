@@ -1,0 +1,21 @@
+.img_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+}
+
+.img_logo img {
+    width: 250px;
+}
+
+.img_pele {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: -339px;
+}
+
+.img_pele img {
+    width: 800px;
+}
