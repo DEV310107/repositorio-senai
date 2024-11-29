@@ -38,12 +38,15 @@ body {
     display: inline-block;
 }
 
-.img01 p {
-    
+.txt01 p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .img02 {
-    background: url(../img/Floresta.jpg) center center/cover;
+    background: url(../img/Praias.jpg) center center/cover;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
@@ -60,6 +63,13 @@ body {
     letter-spacing: 3px;
     color: #fff;
     display: inline-block;
+}
+
+.txt02 p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .img03 {
@@ -82,8 +92,15 @@ body {
     display: inline-block;
 }
 
+.txt03 p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .img04 {
-    background: url(../img/Montanha.jpg) center center/cover;
+    background: url(../img/Floresta.jpg) center center/cover;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
@@ -100,5 +117,19 @@ body {
     letter-spacing: 3px;
     color: #fff;
     display: inline-block;
+}
+
+.txt04 p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.subir_all {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-attachment: fixed;
 }
 
