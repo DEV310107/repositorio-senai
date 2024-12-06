@@ -5,10 +5,6 @@
             "title": "Bugs",
             "tasks": [
                 {
-                    "text": "arrumar o pelé",
-                    "id": "wzt7lgep26etquwsudy8t3rg"
-                },
-                {
                     "text": "arrumar icones",
                     "id": "nm45lrc7i3c1n3gtvnpoibug"
                 },
@@ -24,20 +20,20 @@
             "title": "a fazer",
             "tasks": [
                 {
-                    "text": "icone com caminho (cabeçalho)",
-                    "id": "cdtj7lk1oahwd58bno0ofl19"
+                    "text": "comentar",
+                    "id": "uap127lnz3kffy1bvnsxesak"
                 },
                 {
                     "text": "fale conosco\n",
                     "id": "db6g70bh4r8ruf32kon16f13"
                 },
                 {
-                    "text": "colocar watsap",
-                    "id": "qzpoede81ef6xlzlpim0xzv8"
+                    "text": "icone com caminho (cabeçalho)",
+                    "id": "cdtj7lk1oahwd58bno0ofl19"
                 },
                 {
-                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
-                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
+                    "text": "colocar watsap",
+                    "id": "qzpoede81ef6xlzlpim0xzv8"
                 }
             ],
             "id": "b54jp4igwjydw0ww0evwulr5",
@@ -47,16 +43,12 @@
             "title": "fazendo",
             "tasks": [
                 {
-                    "text": "planos",
-                    "id": "ff6z4hhn9sg49mag4sjojk7y"
-                },
-                {
                     "text": "nossos atletas ",
                     "id": "us5tz4dbr1fb2wqpjrk8q4qo"
                 },
                 {
-                    "text": "arrumar o pele",
-                    "id": "zsoh6is27i486if8mn7bulzd"
+                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
+                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
                 }
             ],
             "id": "inxetnpb2s6o374vk9531fkk",
@@ -80,6 +72,14 @@
                 {
                     "text": "tirar as imgs inuteis",
                     "id": "y7sghj6ak10intdzip90781v"
+                },
+                {
+                    "text": "planos",
+                    "id": "ff6z4hhn9sg49mag4sjojk7y"
+                },
+                {
+                    "text": "arrumar o pelé",
+                    "id": "wzt7lgep26etquwsudy8t3rg"
                 }
             ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
@@ -88,5 +88,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733460010758
+    "timestamp": 1733462664471
 }
