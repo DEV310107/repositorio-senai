@@ -1,52 +1,65 @@
 .sec1 {
-  background-image: url("../img/planos fundo.png"); /* usa aspas e espaço sem barra */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-image: url("../img/planos fundo.png"); /* define uma imagem de fundo, mas ta usando aspas e espaço sem barra. não é muito padronizado */
+  background-repeat: no-repeat; /* faz a imagem não repetir no fundo */
+  background-position: center; /* posiciona a imagem no centro */
+  background-size: cover; /* ajusta a imagem pra cobrir toda a área */
+  height: 100vh; /* define a altura como 100% da tela */
+  width: 100vw; /* define a largura como 100% da tela */
+  display: flex; /* usa flexbox pra alinhar os elementos */
+  justify-content: space-between; /* deixa os itens com espaço entre eles */
+  align-items: center; /* alinha os itens no centro verticalmente */
 }
 
 .edit_txt010 {
-  padding-top: 80px;
-  margin-left: 150px;
+  padding-top: 80px; /* adiciona espaço em cima do texto */
+  margin-left: 150px; /* coloca margem na esquerda */
 }
 
 .edit_h1 {
-  font-family: "Gloock", serif;
-  color: azure;
-  font-size: 80px;
+  font-family: "Gloock", serif; /* usa a fonte gloock, estilo serif */
+  color: azure; /* cor do texto é azure, um azul clarinho */
+  font-size: 80px; /* tamanho do texto bem grande */
 }
 
 .edit_h1 span {
-  font-family: "Freehand", cursive;
-  color: #67A8EA;
+  font-family: "Freehand", cursive; /* muda a fonte do span pra freehand, estilo cursivo */
+  color: #67A8EA; /* cor do texto é um azul específico */
 }
 
 .edit_txt010 p {
-  font-family: "Fugaz One", sans-serif;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgba(0,0,0,0.5) ; /* borda cinza */
-  background-color: #ffffff; /* fundo cinza */
-  opacity: 0.5;
-  height: 300px;
-  width: 600px;
-  padding: 105px;
-  padding-left: 182px;
-  font-size: 50px;
+  font-family: "Fugaz One", sans-serif; /* fonte fugaz one, estilo sans-serif */
+  color: rgb(0, 0, 0); /* cor preta no texto */
+  border: 1px solid rgba(0,0,0,0.5); /* borda cinza transparente */
+  background-color: #ffffff; /* fundo branco */
+  opacity: 0.5; /* texto e fundo com transparencia */
+  height: 300px; /* altura fixa da caixa de texto */
+  width: 600px; /* largura fixa */
+  padding: 105px; /* espaço dentro da caixa */
+  padding-left: 182px; /* padding extra só na esquerda */
+  font-size: 50px; /* texto bem grande */
 }
 
 .edit_input {
-  font-family: "Gloock", sans-serif;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgba(0,0,0,0.5) ; /* borda cinza */
-  background-color: #ffffff; /* fundo cinza */
-  opacity: 0.5;
-  height: 300px;
-  width: 300px;
-  
+  font-family: "Gloock", sans-serif; /* mesma fonte gloock, mas agora no input */
+  color: rgb(0, 0, 0); /* texto preto */
+  border: 1px solid rgba(0,0,0,0.5); /* borda cinza */
+  background-color: #ffffff; /* fundo branco */
+  opacity: 0.5; /* fundo meio transparente */
+  height: 500px; /* altura bem grande */
+  width: 450px; /* largura média */
+  margin-right: 100px; /* espaço na direita */
+  display: flex; /* usa flexbox pros inputs */
+  align-items: center; /* alinha no centro verticalmente */
+  justify-content: center; /* alinha no centro horizontalmente */
+  flex-direction: column; /* organiza em coluna */
+  gap: 10px; /* espaço entre os elementos */
+  font-size: 30px; /* texto do input grandinho */
 }
 
 .edit_input input {
-  color: #111E3A;
+  color: #111E3A; /* cor do texto no input azul escuro */
+  border: 1px solid #000; /* borda preta no input */
+  height: 35px; /* altura pequena do campo */
+  width: 300px; /* largura média */
+  background-color: #111E3A; /* fundo azul escuro */
 }

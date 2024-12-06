@@ -9,12 +9,7 @@
         },
         {
             "title": "a fazer",
-            "tasks": [
-                {
-                    "text": "comentar",
-                    "id": "uap127lnz3kffy1bvnsxesak"
-                }
-            ],
+            "tasks": [],
             "id": "b54jp4igwjydw0ww0evwulr5",
             "color": "#fcb900"
         },
@@ -22,16 +17,8 @@
             "title": "fazendo",
             "tasks": [
                 {
-                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
-                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
-                },
-                {
-                    "text": "nossa missao (texto com borda)\n",
-                    "id": "udlj465dnrroe28cp1khbj1h"
-                },
-                {
-                    "text": "planos",
-                    "id": "ff6z4hhn9sg49mag4sjojk7y"
+                    "text": "comentar",
+                    "id": "uap127lnz3kffy1bvnsxesak"
                 }
             ],
             "id": "inxetnpb2s6o374vk9531fkk",
@@ -87,6 +74,18 @@
                 {
                     "text": "acessibilidade celular",
                     "id": "wgl87wxlf6zxo3v34q9pqhee"
+                },
+                {
+                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
+                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
+                },
+                {
+                    "text": "planos",
+                    "id": "ff6z4hhn9sg49mag4sjojk7y"
+                },
+                {
+                    "text": "nossa missao (texto com borda)\n",
+                    "id": "udlj465dnrroe28cp1khbj1h"
                 }
             ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
@@ -95,5 +94,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733491905887
+    "timestamp": 1733504979552
 }

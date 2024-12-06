@@ -171,12 +171,12 @@ header {
 }
 
 .img_jordan {
-    margin-top: -370px; /* margem topo negativa */
+    margin-top: -270px; /* margem topo negativa */
     margin-left: 45px; /* margem esquerda */
 }
 
 .img_jordan img {
-    width: 500px; /* largura da imagem */
+    width: 600px; /* largura da imagem */
     height: 500px; /* altura da imagem */
 }
 
@@ -329,6 +329,10 @@ header {
     text-align: center; /* centraliza texto */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
     color: #0d3b66; /* cor do texto */
+}
+
+.pro::hover{
+    transition: transform 0.3s ease
 }
 
 .elite{
