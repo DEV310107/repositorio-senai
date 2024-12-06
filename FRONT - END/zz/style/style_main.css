@@ -310,18 +310,7 @@ header {
 }
 
 .starter{
-    background-color: #e0e1ddc5;  /* fundo com transparência */
-    border-radius: 15px; /* borda arredondada */
-    padding: 50px ; /* padding interno */
-    width: 250px; /* largura */
-    height: 560px; /* altura */
-    text-align: center; /* centraliza texto */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
-    color: #0d3b66; /* cor do texto */
-}
-
-.pro{
-    background-color: #e0e1ddc5;  /* fundo com transparência */
+    background-color: #e0e1ddc5; /* fundo com transparência */
     border-radius: 15px; /* borda arredondada */
     padding: 60px; /* padding interno */
     width: 250px; /* largura */
@@ -329,14 +318,33 @@ header {
     text-align: center; /* centraliza texto */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
     color: #0d3b66; /* cor do texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.pro::hover{
-    transition: transform 0.3s ease
+.starter:hover {
+    transform: translateY(-10px); /* levanta o elemento 10px */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.pro {
+    background-color: #e0e1ddc5; /* fundo com transparência */
+    border-radius: 15px; /* borda arredondada */
+    padding: 60px; /* padding interno */
+    width: 250px; /* largura */
+    height: 560px; /* altura */
+    text-align: center; /* centraliza texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    color: #0d3b66; /* cor do texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* adiciona transição suave */
+}
+
+.pro:hover {
+    transform: translateY(-10px); /* levanta o elemento 10px */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* intensifica a sombra ao hover */
 }
 
 .elite{
-    background-color: #e0e1ddc5;  /* fundo com transparência */
+    background-color: #e0e1ddc5; /* fundo com transparência */
     border-radius: 15px; /* borda arredondada */
     padding: 60px; /* padding interno */
     width: 250px; /* largura */
@@ -344,6 +352,11 @@ header {
     text-align: center; /* centraliza texto */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
     color: #0d3b66; /* cor do texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* adiciona transição suave */
+}
+.elite:hover {
+    transform: translateY(-10px); /* levanta o elemento 10px */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* intensifica a sombra ao hover */
 }
 
 .preço {

@@ -1,5 +1,6 @@
 .sec1 {
   background-image: url("../img/planos fundo.png"); /* define uma imagem de fundo, mas ta usando aspas e espaço sem barra. não é muito padronizado */
+  filter: brightness(70%);
   background-repeat: no-repeat; /* faz a imagem não repetir no fundo */
   background-position: center; /* posiciona a imagem no centro */
   background-size: cover; /* ajusta a imagem pra cobrir toda a área */
@@ -57,9 +58,16 @@
 }
 
 .edit_input input {
-  color: #111E3A; /* cor do texto no input azul escuro */
+  color: #ffffff; /* cor do texto no input azul escuro */
   border: 1px solid #000; /* borda preta no input */
   height: 35px; /* altura pequena do campo */
   width: 300px; /* largura média */
   background-color: #111E3A; /* fundo azul escuro */
+}
+
+.bot {
+  color: azure;
+  background-color: rgb(34, 34, 34);
+  width: 200px;
+  height: 50px;
 }
