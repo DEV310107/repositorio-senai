@@ -274,9 +274,16 @@ header {
     height: 300px;
     text-align: center;
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 90px;
     padding-top: 80px;
 }
+
+.edit_cont02{
+    display: flex;
+    margin-top: -130px;
+    width: 100%;
+}
+
 
 .sec06 {
     background-image: url(../img/fundo.png);
@@ -380,4 +387,191 @@ header {
 .edit_txt07 h1 {
     color: azure;
     font-size: 70px;
+}
+
+.sec08 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+ .sec08 .container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+.sec08 form label {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #ddd;
+
+  }
+.sec08 form label[for="email"] {
+    font-size: 1.5rem; 
+  }
+
+.button form label[for="phone"] {
+  font-size: 1.5rem; 
+}
+
+.sec08 .form-container {
+    font-family: 'Gentiun Plus';
+    color: black;
+    display: flex;
+    background-color: #666;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 955px; 
+    height: 553px; 
+    margin-right: 20px;
+    transform: translateX(-20px);
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.sec08 form input {
+    width: 900px;
+    padding: 25px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.sec08 form button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 20px 40px; 
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      width: 200px; 
+      height: 60px; 
+  }
+
+.sec08 form button:hover {
+    background-color: #ddd;
+  }
+  
+  .sec08 .contact-options {
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .sec08 .container .contact-options p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .sec08 .contact-options .icons a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 20px; 
+}
+  
+.sec08 .container .basketball img {
+    width: 600px;
+    height: auto;
+    margin-right: -150px;
+    margin-bottom: 80px;
+    margin-top: -50px;
+    }
+    
+    .sec08 .container h1 {
+    font-family: 'Gloock', serif;
+    font-size: 102px;
+    line-height: 38.4px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: -1058px;
+}
+
+.sec8 {
+    padding: 20px;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco para contraste */
+}
+
+.sec8 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sec8 h1 {
+    font-family: 'Gloock', serif;
+    font-size: 65px;
+    text-align: left; /* Alinhar à esquerda */
+    margin-left: -150px;
+    margin-bottom: 20px;
+}
+
+.sec8 .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar à esquerda */
+    background-color: #ccc; /* Fundo cinza */
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 700px; /* Diminuir o tamanho do quadrado */
+    margin-left: -150px;
+}
+
+.sec8 .form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sec8 .form-container label {
+    margin-bottom: 10px;
+}
+
+.sec8 .form-container input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.sec8 .form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sec8 .contact-options {
+    text-align: left; /* Alinhar à esquerda */
+    margin-top: 20px;
+}
+
+.sec8 .contact-options .icons {
+    display: flex;
+    justify-content: flex-start; /* Alinhar à esquerda */
+    gap: 20px;
+}
+
+.sec8 .contact-options .icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+.sec8 .basketball {
+    text-align: left; /* Alinhar à esquerda */
+    margin-top: 20px;
+}
+
+.sec8 .basketball img {
+    width: 450px; /* Aumentar o tamanho da imagem */
+    height: auto;
+    margin-left: 900px;
+    margin-top: -450px;
 }

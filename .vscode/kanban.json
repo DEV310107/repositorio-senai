@@ -3,24 +3,7 @@
     "cols": [
         {
             "title": "Bugs",
-            "tasks": [
-                {
-                    "text": "acessibilidade celular",
-                    "id": "wgl87wxlf6zxo3v34q9pqhee"
-                },
-                {
-                    "text": "colocar aspas",
-                    "id": "q49g1m47ifl28o2e3n0epzbm"
-                },
-                {
-                    "text": "arrumar icones",
-                    "id": "nm45lrc7i3c1n3gtvnpoibug"
-                },
-                {
-                    "text": "nossa missao (texto com borda)\n",
-                    "id": "udlj465dnrroe28cp1khbj1h"
-                }
-            ],
+            "tasks": [],
             "id": "bnv1s53w95acwk2fzyexx5ju",
             "color": "#eb144c"
         },
@@ -32,16 +15,8 @@
                     "id": "uap127lnz3kffy1bvnsxesak"
                 },
                 {
-                    "text": "fale conosco\n",
-                    "id": "db6g70bh4r8ruf32kon16f13"
-                },
-                {
-                    "text": "icone com caminho (cabeçalho)",
-                    "id": "cdtj7lk1oahwd58bno0ofl19"
-                },
-                {
-                    "text": "colocar watsap",
-                    "id": "qzpoede81ef6xlzlpim0xzv8"
+                    "text": "acessibilidade celular",
+                    "id": "wgl87wxlf6zxo3v34q9pqhee"
                 }
             ],
             "id": "b54jp4igwjydw0ww0evwulr5",
@@ -53,6 +28,14 @@
                 {
                     "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
                     "id": "sw6wdwl1dqyhhn7t5ycll8h9"
+                },
+                {
+                    "text": "fale conosco\n",
+                    "id": "db6g70bh4r8ruf32kon16f13"
+                },
+                {
+                    "text": "nossa missao (texto com borda)\n",
+                    "id": "udlj465dnrroe28cp1khbj1h"
                 }
             ],
             "id": "inxetnpb2s6o374vk9531fkk",
@@ -88,6 +71,22 @@
                 {
                     "text": "nossos atletas ",
                     "id": "us5tz4dbr1fb2wqpjrk8q4qo"
+                },
+                {
+                    "text": "colocar watsap",
+                    "id": "qzpoede81ef6xlzlpim0xzv8"
+                },
+                {
+                    "text": "icone com caminho (cabeçalho)",
+                    "id": "cdtj7lk1oahwd58bno0ofl19"
+                },
+                {
+                    "text": "colocar aspas",
+                    "id": "q49g1m47ifl28o2e3n0epzbm"
+                },
+                {
+                    "text": "arrumar icones",
+                    "id": "nm45lrc7i3c1n3gtvnpoibug"
                 }
             ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
@@ -96,5 +95,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733480849137
+    "timestamp": 1733487686111
 }
