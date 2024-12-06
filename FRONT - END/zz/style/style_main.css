@@ -166,7 +166,7 @@ header {
 }
 
 .img_jordan {
-    margin-top: -400px;
+    margin-top: -370px;
     margin-left: 45px;
 }
 
@@ -345,4 +345,29 @@ edit_cont01 {
 .button:hover {
     background-color: #2a4d6c;
     transform: scale(1.05);
+}
+
+
+.sec07 {
+    background-image: url(../img/fundo02.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.edit_txt07 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 900px;
+    height: 900px;
+}
+
+.edit_txt07 h1 {
+    color: azure;
+    font-size: 70px;
 }

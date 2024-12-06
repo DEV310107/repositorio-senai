@@ -5,6 +5,14 @@
             "title": "Bugs",
             "tasks": [
                 {
+                    "text": "acessibilidade celular]",
+                    "id": "wgl87wxlf6zxo3v34q9pqhee"
+                },
+                {
+                    "text": "colocar aspas",
+                    "id": "q49g1m47ifl28o2e3n0epzbm"
+                },
+                {
                     "text": "arrumar icones",
                     "id": "nm45lrc7i3c1n3gtvnpoibug"
                 },
@@ -43,10 +51,6 @@
             "title": "fazendo",
             "tasks": [
                 {
-                    "text": "nossos atletas ",
-                    "id": "us5tz4dbr1fb2wqpjrk8q4qo"
-                },
-                {
                     "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
                     "id": "sw6wdwl1dqyhhn7t5ycll8h9"
                 }
@@ -80,6 +84,10 @@
                 {
                     "text": "arrumar o pelé",
                     "id": "wzt7lgep26etquwsudy8t3rg"
+                },
+                {
+                    "text": "nossos atletas ",
+                    "id": "us5tz4dbr1fb2wqpjrk8q4qo"
                 }
             ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
@@ -88,5 +96,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733462664471
+    "timestamp": 1733464324181
 }
