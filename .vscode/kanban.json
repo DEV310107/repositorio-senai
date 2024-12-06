@@ -5,7 +5,7 @@
             "title": "Bugs",
             "tasks": [
                 {
-                    "text": "acessibilidade celular]",
+                    "text": "acessibilidade celular",
                     "id": "wgl87wxlf6zxo3v34q9pqhee"
                 },
                 {
@@ -96,5 +96,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733464324181
+    "timestamp": 1733480849137
 }

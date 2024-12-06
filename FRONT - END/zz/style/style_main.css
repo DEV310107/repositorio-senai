@@ -76,23 +76,31 @@ header {
 .edit_border {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    color: azure;
+    align-items: center;
+    gap: 70px;
+    color: #fff;
+    font-family: "Jersey 25", sans-serif;
 }
 
 .edit_border {
     border: 1px solid #111e3a;
     background-color: #111e3a;
-    padding: 30px;
-    margin-left: 100px;
+    padding: 50px;
+    width: 900px;
+    margin-left:300px;
     margin-right: 100px;
     margin-top: -60px;
-    font-family: "Jersey 25", sans-serif;
 }
 
 .edit_border img {
-    gap: 15px;
-    margin-left: 30px;
+    gap: 100px;
+    margin-left: 10px;
+    width: 45px;
+}
+
+.edit_border p{
+    display: flex;
+    width: 45px;
 }
 
 .edit_txt02 {
@@ -108,10 +116,10 @@ header {
     font-family: "Jim Nightshade", cursive;
 }
 
-.edit_txt02 p {
-    font-size: 35px;
+.edit_txt02 cite {
+    font-size: 40px;
     width: 400px;
-    margin-top: 300px;
+    margin-top: 400px;
     display: flex;
     text-align: center;
 }
@@ -227,10 +235,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 220px;
+    padding-top:10px;
     height: 60vh;
     gap: 5px;
-    font-size: 30px;
+    font-size: 80px;
 }
 
 .edit_txt05 span {
@@ -245,11 +253,11 @@ header {
     height: 50vh;
 }
 
-edit_cont01 {
+.edit_cont01 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 100px;
-    max-width: 50px;
+    max-width: 550px; margin-top:800px;
 }
 
 .edit_cont01 {
@@ -258,14 +266,16 @@ edit_cont01 {
 }
 
 .edit_cont01 {
+    display: flex;
     border: 1px solid #D9D9D9;
     background-color: #d9d9d9;
     margin-bottom: 15px;
     width: 500px;
     height: 300px;
     text-align: center;
-    margin-left: 150px;
-    padding-top: 60px;
+    margin-left: 250px;
+    margin-top: 50px;
+    padding-top: 80px;
 }
 
 .sec06 {
@@ -280,7 +290,7 @@ edit_cont01 {
     display: flex;
     gap: 65px; 
     justify-content: center;
-    margin-top: 80px; 
+    margin-top: 250px; 
     padding-top: 40px;
     z-index: 2; 
     position: relative;
