@@ -3,7 +3,20 @@
     "cols": [
         {
             "title": "Bugs",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "arrumar o pelé",
+                    "id": "wzt7lgep26etquwsudy8t3rg"
+                },
+                {
+                    "text": "arrumar icones",
+                    "id": "nm45lrc7i3c1n3gtvnpoibug"
+                },
+                {
+                    "text": "nossa missao (texto com borda)\n",
+                    "id": "udlj465dnrroe28cp1khbj1h"
+                }
+            ],
             "id": "bnv1s53w95acwk2fzyexx5ju",
             "color": "#eb144c"
         },
@@ -11,24 +24,20 @@
             "title": "a fazer",
             "tasks": [
                 {
-                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
-                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
+                    "text": "icone com caminho (cabeçalho)",
+                    "id": "cdtj7lk1oahwd58bno0ofl19"
                 },
                 {
                     "text": "fale conosco\n",
                     "id": "db6g70bh4r8ruf32kon16f13"
                 },
                 {
-                    "text": "nossos atletas\n",
-                    "id": "us5tz4dbr1fb2wqpjrk8q4qo"
+                    "text": "colocar watsap",
+                    "id": "qzpoede81ef6xlzlpim0xzv8"
                 },
                 {
-                    "text": "planos",
-                    "id": "ff6z4hhn9sg49mag4sjojk7y"
-                },
-                {
-                    "text": "sobre",
-                    "id": "bd4d1lmczrz6y0pilyqgayhp"
+                    "text": "colocar fontes:\n\n-Jockey one\n-jersey25\n-hepta slab\n-jimnijhtshade\n-jomolhari\n-gloock\n-jaro\n-gentium plus\n-freehand\n-fugaz one",
+                    "id": "sw6wdwl1dqyhhn7t5ycll8h9"
                 }
             ],
             "id": "b54jp4igwjydw0ww0evwulr5",
@@ -38,8 +47,16 @@
             "title": "fazendo",
             "tasks": [
                 {
-                    "text": "inicio\n",
-                    "id": "h78ejeq0rvpdcml0s9i2ggt8"
+                    "text": "planos",
+                    "id": "ff6z4hhn9sg49mag4sjojk7y"
+                },
+                {
+                    "text": "nossos atletas ",
+                    "id": "us5tz4dbr1fb2wqpjrk8q4qo"
+                },
+                {
+                    "text": "arrumar o pele",
+                    "id": "zsoh6is27i486if8mn7bulzd"
                 }
             ],
             "id": "inxetnpb2s6o374vk9531fkk",
@@ -47,12 +64,29 @@
         },
         {
             "title": "pront",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "inicio\n",
+                    "id": "h78ejeq0rvpdcml0s9i2ggt8"
+                },
+                {
+                    "text": "sobre",
+                    "id": "bd4d1lmczrz6y0pilyqgayhp"
+                },
+                {
+                    "text": "parte do pele",
+                    "id": "ppvilaia2sf1d6tf8nkb7apj"
+                },
+                {
+                    "text": "tirar as imgs inuteis",
+                    "id": "y7sghj6ak10intdzip90781v"
+                }
+            ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733333202378
+    "timestamp": 1733460010758
 }

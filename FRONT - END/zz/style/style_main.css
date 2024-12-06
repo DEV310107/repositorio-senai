@@ -210,37 +210,55 @@ header {
 }
 
 .sec04 {
-    background-image: url(../img/fundo\ academia\ 02.png);
+    background-image: url(../img/Group\ 21.png);
     background-size: cover; /* Ajusta o tamanho da imagem ao tamanho da tela */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-position: center; /* Centraliza a imagem */
-    height: 80vh;
-    width: 140vh;
-}
-
-.sec04 .edit_txt05 {
-    display: flex;
-    margin-left: 115vh;
-    align-items: center;
     height: 100vh;
 }
 
 .edit_txt05 h1 {
-    display: flex; /* Garante que os elementos dentro de h1 fiquem lado a lado */
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 220px;
+    height: 60vh;
+    gap: 5px;
+    font-size: 30px;
 }
 
 .edit_txt05 span {
     color: #005BE2;
-    margin-left: 8px; /* Espaçamento entre "Nossa" e "Missão" */
 }
 
+.sec05 {
+    background-image: url(../img/fundo\ chel\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
 
+edit_cont01 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    max-width: 50px;
+}
 
+.edit_cont01 {
+    font-size: 30px;       
+    width: 860px;
+}
 
-
-
-
-
-
+.edit_cont01 {
+    border: 1px solid #D9D9D9;
+    background-color: #d9d9d9;
+    margin-bottom: 15px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-left: 150px;
+    padding-top: 60px;
+}
 
