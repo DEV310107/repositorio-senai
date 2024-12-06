@@ -1,577 +1,585 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Freehand&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Freehand&family=Fugaz+One&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Freehand&family=Fugaz+One&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jim+Nightshade&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
-
-*{ /*Reset*/
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* importa fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* importa fontes, iguais msm */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* mais fontes, repete muito */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* adiciona jomolhari */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* inclui glock e jaro */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* mais fontes tipo gentium */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Freehand&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* adiciona freehand */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Freehand&family=Fugaz+One&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gloock&family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jim+Nightshade&family=Jockey+One&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); /* inclui fugaz one */
+*{ /*reset*/
+    margin: 0; /* tira margens padrão */
+    padding: 0; /* tira padding padrão */
+    border: 0; /* remove borda */
+    outline: 0; /* remove outline */
+    box-sizing: border-box; /* ajusta box-sizing */
+    list-style: none; /* tira estilos de lista */
+    text-decoration: none; /* remove sublinhado */
 }
 
 html {
-    scroll-behavior: smooth; /*Comportamento de rolagem suave*/
+    scroll-behavior: smooth; /* faz rolagem suave */
 }
 
 body {
-    background-color: white;
+    background-color: white; /* fundo branco */
 }
 
 .img_logo img {
-    width: 50px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 50px; /* largura da imagem */
+    height: 30px; /* altura da imagem */
+    margin-top: 10px; /* margem superior */
+    margin-left: 10px; /* margem esquerda */
 }
 
 .img_buscar {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -25px;
-    margin-bottom: 5px;
+    display: flex; /* usa flexbox */
+    justify-content: flex-end; /* alinha a direita */
+    margin-top: -25px; /* margem top negativa */
+    margin-bottom: 5px; /* margem bottom */
 }
 
 header {
-    background: url("../img/Fundo\ 01.png") center center/cover;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.712);
-    background-blend-mode: color;
-    color: azure;
-    font-family: "Jockey One", sans-serif;
+    background: url("../img/Fundo\ 01.png") center center/cover; /* fundo com imagem */
+    height: 100vh; /* altura total da tela */
+    background-color: rgba(0, 0, 0, 0.712); /* cor de fundo meio transparente */
+    background-blend-mode: color; /* mistura as cores */
+    color: azure; /* cor do texto */
+    font-family: "Jockey One", sans-serif; /* fonte usada */
 }
 
 .cont_cabe {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza */
+    gap: 25px; /* espaçamento entre itens */
+    border-bottom: 1px solid rgb(255, 255, 255); /* borda inferior branca */
 }
 
 .cont_cabe a {
-    color: azure;
-    font-size: 20px;
-    margin-top: -20px;
+    color: azure; /* cor dos links */
+    font-size: 20px; /* tamanho da fonte */
+    margin-top: -20px; /* margem top negativa */
 }
 
 .edit_txt01 {
-    margin-left: 40px;
-    margin-top: 155px;
+    margin-left: 40px; /* margem esquerda */
+    margin-top: 155px; /* margem topo */
 }
 
 .edit_txt01 p {
-    font-size: 60px;
-    max-width: 800px;
+    font-size: 60px; /* tamanho do paragrafo */
+    max-width: 800px; /* largura max */
 }
 
 .edit_border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    color: #fff;
-    font-family: "Jersey 25", sans-serif;
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza */
+    align-items: center; /* alinha centro */
+    gap: 70px; /* espaçamento entre itens */
+    color: #fff; /* cor dos textos */
+    font-family: "Jersey 25", sans-serif; /* fonte usada */
 }
 
 .edit_border {
-    border: 1px solid #111e3a;
-    background-color: #111e3a;
-    padding: 50px;
-    width: 900px;
-    margin-left:300px;
-    margin-right: 100px;
-    margin-top: -60px;
+    border: 1px solid #111e3a; /* borda escura */
+    background-color: #111e3a; /* fundo escuro */
+    padding: 50px; /* padding interno */
+    width: 900px; /* largura */
+    margin-left:300px; /* margem esquerda */
+    margin-right: 100px; /* margem direita */
+    margin-top: -60px; /* margem topo negativa */
 }
 
 .edit_border img {
-    gap: 100px;
-    margin-left: 10px;
-    width: 45px;
+    gap: 100px; /* espaçamento */
+    margin-left: 10px; /* margem esquerda */
+    width: 45px; /* largura da imagem */
 }
 
 .edit_border p{
-    display: flex;
-    width: 45px;
+    display: flex; /* usa flexbox */
+    width: 45px; /* largura */
 }
 
 .edit_txt02 {
-    background-color: white;
-    height: 62vh;
+    background-color: white; /* fundo branco */
+    height: 62vh; /* altura */
 }
 
 .edit_txt02 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 140px; 
-    font-family: "Jim Nightshade", cursive;
+    display: flex; /* usa flexbox */
+    justify-content: flex-end; /* alinha a direita */
+    align-items: center; /* alinha no centro */
+    margin-right: 140px; /* margem direita */
+    font-family: "Jim Nightshade", cursive; /* fonte usada */
 }
 
 .edit_txt02 cite {
-    font-size: 40px;
-    width: 400px;
-    margin-top: 400px;
-    display: flex;
-    text-align: center;
+    font-size: 40px; /* tamanho da citação */
+    width: 400px; /* largura */
+    margin-top: 400px; /* margem topo */
+    display: flex; /* usa flexbox */
+    text-align: center; /* centraliza texto */
 }
 
 .img_pele {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: -200px;
-    margin-left: 70px;
+    display: flex; /* usa flexbox */
+    justify-content: flex-start; /* alinha a esquerda */
+    align-items: center; /* alinha no centro */
+    margin-top: -200px; /* margem topo negativa */
+    margin-left: 70px; /* margem esquerda */
 }
 
 .img_pele img {
-    border: 1px solid #111e3a;
-    background-color: #111e3a;
-    margin-bottom: 100px;
-    width: 660px;
-    height: 350px;
-    padding-left: 1px;
-    padding-right: 250px;
-    padding-top: 1px;
+    border: 1px solid #111e3a; /* borda escura */
+    background-color: #111e3a; /* fundo escuro */
+    margin-bottom: 100px; /* margem inferior */
+    width: 660px; /* largura da imagem */
+    height: 350px; /* altura da imagem */
+    padding-left: 1px; /* padding esquerda */
+    padding-right: 250px; /* padding direita */
+    padding-top: 1px; /* padding topo */
 }
 
 .sec02 { 
-    background-color: #111e3a;
-    height: 100vh;
+    background-color: #111e3a; /* fundo escuro */
+    height: 100vh; /* altura total da tela */
 }
 
 .edit_txt03 {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin-left: auto;
-    padding-top: 50px;
-    padding-right: 100px;
-    width: 700px; 
-    height: 500px;
-    color: azure;
-    font-family: "Jomolhari", serif;
+    display: flex; /* usa flexbox */
+    justify-content: end; /* alinha no final */
+    flex-direction: column; /* organiza em coluna */
+    margin-left: auto; /* margem esquerda auto */
+    padding-top: 50px; /* padding topo */
+    padding-right: 100px; /* padding direita */
+    width: 700px; /* largura */
+    height: 500px; /* altura */
+    color: azure; /* cor do texto */
+    font-family: "Jomolhari", serif; /* fonte usada */
 }
 
 .edit_txt03 h1 {
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 60px; /* tamanho do titulo */
+    text-align: center; /* centraliza texto */
+    margin-bottom: 10px; /* margem inferior */
 }
 
 .edit_txt03 p {
-    font-size: 25px;
-    gap: 10px;
-    text-align: right;
+    font-size: 25px; /* tamanho do paragrafo */
+    gap: 10px; /* espaçamento */
+    text-align: right; /* alinha a direita */
 }
 
 .img_jordan {
-    margin-top: -370px;
-    margin-left: 45px;
+    margin-top: -370px; /* margem topo negativa */
+    margin-left: 45px; /* margem esquerda */
 }
 
 .img_jordan img {
-    width: 500px;
-    height: 500px;
+    width: 500px; /* largura da imagem */
+    height: 500px; /* altura da imagem */
 }
 
 .sec03 {
-    background-color: #111e3a;
-    height: 70vh;
+    background-color: #111e3a; /* fundo escuro */
+    height: 70vh; /* altura */
 }
 
 .img_atletas {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
+    display: flex; /* usa flexbox */
+    justify-content: space-evenly; /* espaça igual */
+    margin-top: 80px; /* margem topo */
 }
 
 .img_atletas img {
-    margin-top: -50px;
-    height: 250px;
-    width: 200px;
+    margin-top: -50px; /* margem topo negativa */
+    height: 250px; /* altura da imagem */
+    width: 200px; /* largura da imagem */
 }
 
 .edit_txt04 {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* usa flexbox */
+    justify-content: space-between; /* espaça entre */
+    font-family: "Jomolhari", serif; /* fonte usada */
 }
 
 .edit_txt04 p {
-    border: 1px solid #d9d9d9;
-    background-color: #d9d9d9;
-    padding: 30px;
-    margin-right: 40vh;
-    margin-left: 40vh;
-    margin-top: 110px;
-    font-size: 18px;
-    text-align: center;
+    border: 1px solid #d9d9d9; /* borda cinza */
+    background-color: #d9d9d9; /* fundo cinza */
+    padding: 30px; /* padding interno */
+    margin-right: 40vh; /* margem direita */
+    margin-left: 40vh; /* margem esquerda */
+    margin-top: 110px; /* margem topo */
+    font-size: 18px; /* tamanho da fonte */
+    text-align: center; /* centraliza texto */
 }
 
 .edit_txt04 img {
-    height: 40px;
-    width: 40px;
-    margin-top: 190px;
-    margin-right: 30px;
+    height: 40px; /* altura da imagem */
+    width: 40px; /* largura da imagem */
+    margin-top: 190px; /* margem topo */
+    margin-right: 30px; /* margem direita */
 }
 
 .sec04 {
-    background-image: url(../img/Group\ 21.png);
-    background-size: cover; /* Ajusta o tamanho da imagem ao tamanho da tela */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: center; /* Centraliza a imagem */
-    height: 100vh;
+    background-image: url(../img/Group\ 21.png); /* imagem de fundo */
+    background-size: cover; /* ajusta o tamanho */
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-position: center; /* centraliza a imagem */
+    height: 100vh; /* altura total */
 }
 
 .edit_txt05 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top:10px;
-    height: 60vh;
-    gap: 5px;
-    font-size: 80px;
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza */
+    align-items: center; /* alinha no centro */
+    padding-top:-100px; /* padding topo */
+    height: 60vh; /* altura */
+    gap: 20px; /* espaçamento */
+    font-size: 60px; /* tamanho da fonte */
+    margin-left:-550px;
+    font-family: "Gloock", serif; /* fonte usada */
 }
 
 .edit_txt05 span {
-    color: #005BE2;
+    color: #005BE2; /* cor azul */
 }
 
 .sec05 {
-    background-image: url(../img/fundo\ chel\ \(1\).png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
+    background-image: url(../img/fundo\ chel\ \(1\).png); /* imagem de fundo */
+    background-size: cover; /* ajusta o tamanho */
+    background-repeat: no-repeat; /* não repete */
+    background-position: center; /* centraliza */
+    width: 100vw; 
 }
 
 .edit_cont01 {
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-    max-width: 550px; margin-top:800px;
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza */
+    margin-left: -00px; /* margem esquerda */
+    max-width: 850px; /* largura max */
+    margin-top:800px; /* margem topo */
 }
 
 .edit_cont01 {
-    font-size: 30px;       
-    width: 860px;
+    font-family: "Gloock", serif; /* fonte usada */
+    font-size: 30px; /* tamanho da fonte */
+    width: 860px; /* largura */
 }
 
 .edit_cont01 {
-    display: flex;
-    border: 1px solid #D9D9D9;
-    background-color: #d9d9d9;
-    margin-bottom: 15px;
-    width: 500px;
-    height: 300px;
-    text-align: center;
-    margin-left: 250px;
-    margin-top: 90px;
-    padding-top: 80px;
+    display: flex; /* usa flexbox */
+    border: 1px solid #D9D9D9; /* borda cinza */
+    background-color: #d9d9d9; /* fundo cinza */
+    margin-bottom: 15px; /* margem inferior */
+    width: 800px; /* largura */
+    height: 300px; /* altura */
+    text-align: center; /* centraliza texto */
+    margin-left: 90px; /* margem esquerda */
+    margin-top: -150px; /* margem topo */
+    padding-top: 80px; /* padding topo */
 }
 
 .edit_cont02{
-    display: flex;
-    margin-top: -130px;
-    width: 100%;
+    display: flex; /* usa flexbox */
+    background-image: url("../img/Group 22.png"); /* usa aspas para caminhos com espaços */
+    background-repeat: no-repeat; /* evita que a imagem se repita */
+    background-size: cover; /* faz a imagem cobrir todo o elemento */
+    background-position: center; 
+    position: relative; /* posição relativa */
+    margin-top: 20px; /* margem topo negativa */
+    width: 100vw; /* largura total */
 }
 
-
 .sec06 {
-    background-image: url(../img/fundo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-image: url(../img/fundo.png); /* imagem de fundo */
+    background-position: center; /* centraliza */
+    background-size: cover; /* ajusta o tamanho */
+    background-repeat: no-repeat; /* não repete */
+    height: 100vh; /* altura total */
 }
 
 .edit_txt06 {
-    display: flex;
-    gap: 65px; 
-    justify-content: center;
-    margin-top: 250px; 
-    padding-top: 40px;
-    z-index: 2; 
-    position: relative;
+    display: flex; /* usa flexbox */
+    gap: 65px;  /* espaçamento */
+    justify-content: center; /* centraliza */
+    margin-top: 40px;  /* margem topo */
+    padding-top: 40px; /* padding topo */
+    z-index: 2;  /* z-index */
+    position: relative; /* posição relativa */
 }
 
 .starter{
-    background-color: #e0e1ddc5; 
-    border-radius: 15px;
-    padding: 50px ;
-    width: 250px;
-    height: 560px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #0d3b66;
+    background-color: #e0e1ddc5;  /* fundo com transparência */
+    border-radius: 15px; /* borda arredondada */
+    padding: 50px ; /* padding interno */
+    width: 250px; /* largura */
+    height: 560px; /* altura */
+    text-align: center; /* centraliza texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    color: #0d3b66; /* cor do texto */
 }
 
 .pro{
-    background-color: #e0e1ddc5; 
-    border-radius: 15px;
-    padding: 60px;
-    width: 250px;
-    height: 560px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #0d3b66;
+    background-color: #e0e1ddc5;  /* fundo com transparência */
+    border-radius: 15px; /* borda arredondada */
+    padding: 60px; /* padding interno */
+    width: 250px; /* largura */
+    height: 560px; /* altura */
+    text-align: center; /* centraliza texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    color: #0d3b66; /* cor do texto */
 }
 
 .elite{
-    background-color: #e0e1ddc5; 
-    border-radius: 15px;
-    padding: 60px;
-    width: 250px;
-    height: 560px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #0d3b66;
-
+    background-color: #e0e1ddc5;  /* fundo com transparência */
+    border-radius: 15px; /* borda arredondada */
+    padding: 60px; /* padding interno */
+    width: 250px; /* largura */
+    height: 560px; /* altura */
+    text-align: center; /* centraliza texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    color: #0d3b66; /* cor do texto */
 }
 
 .preço {
-    margin-top: 60px;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: "Jaro", sans-serif;
+    margin-top: 60px; /* margem topo */
+    font-size: 3rem; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    font-family: "Jaro", sans-serif; /* fonte usada */
 }
 
 .button {
-    margin-top: 40px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #3d5a80;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    font-family: "Jaro", sans-serif;
+    margin-top: 40px; /* margem topo */
+    display: inline-block; /* display inline */
+    text-decoration: none; /* remove sublinhado */
+    background-color: #3d5a80; /* cor de fundo */
+    color: #fff; /* cor do texto */
+    padding: 10px 20px; /* padding */
+    border-radius: 8px; /* borda arredondada */
+    font-size: 1rem; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* sombra */
+    transition: all 0.3s ease; /* transição suave */
+    font-family: "Jaro", sans-serif; /* fonte usada */
 }
 
 .button:hover {
-    background-color: #2a4d6c;
-    transform: scale(1.05);
+    background-color: #2a4d6c; /* muda cor no hover */
+    transform: scale(1.05); /* aumenta tamanho */
 }
 
 
 .sec07 {
-    background-image: url(../img/fundo02.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url(../img/fundo02.PNG); /* imagem de fundo */
+    background-repeat: no-repeat; /* não repete */
+    background-size: cover; /* ajusta o tamanho */
+    background-position: center; /* centraliza */
+    height: 100vh; /* altura total */
 }
 
 .edit_txt07 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 50px;
-    padding-top: 50px;
-    padding-left: 50px;
-    width: 900px;
-    height: 900px;
+    display: flex; /* usa flexbox */
+    justify-content: flex-start; /* alinha a esquerda */
+    flex-direction: column; /* organiza em coluna */
+    gap: 50px; /* espaçamento */
+    padding-top: 50px; /* padding topo */
+    padding-left: 50px; /* padding esquerda */
+    width: 900px; /* largura */
+    height: 900px; /* altura */
 }
 
 .edit_txt07 h1 {
-    color: azure;
-    font-size: 70px;
+    color: azure; /* cor do titulo */
+    font-size: 70px; /* tamanho da fonte */
 }
 
 .sec08 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
+    display: flex; /* usa flexbox */
+    justify-content: space-between; /* espaça entre */
+    align-items: center; /* alinha no centro */
+    height: 100vh; /* altura total */
+    padding: 20px; /* padding */
   }
 
  .sec08 .container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* tamanho do titulo */
+    margin-bottom: 20px; /* margem inferior */
   }
 
 .sec08 form label {
-    display: flex;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    color: #ddd;
-
+    display: flex; /* usa flexbox */
+    margin-bottom: 8px; /* margem inferior */
+    font-size: 1rem; /* tamanho da fonte */
+    color: #ddd; /* cor do texto */
   }
 .sec08 form label[for="email"] {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;  /* aumenta tamanho do label */
   }
 
 .button form label[for="phone"] {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;  /* aumenta tamanho do label */
 }
 
 .sec08 .form-container {
-    font-family: 'Gentiun Plus';
-    color: black;
-    display: flex;
-    background-color: #666;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 100px;
-    margin-left: 200px;
-    width: 955px; 
-    height: 553px; 
-    margin-right: 20px;
-    transform: translateX(-20px);
-    flex-direction: column;
-    justify-content: center;
-}
-  
+    font-family: 'Gentiun Plus'; /* fonte usada, talvez errado */
+    color: black; /* cor do texto */
+    display: flex; /* usa flexbox */
+    background-color: #666; /* fundo cinza */
+    padding: 10px; /* padding interno */
+    border-radius: 8px; /* borda arredondada */
+    margin-top: 100px; /* margem topo */
+    margin-left: 200px; /* margem esquerda */
+    width: 955px;  /* largura */
+    height: 553px;  /* altura */
+    margin-right: 20px; /* margem direita */
+    transform: translateX(-20px); /* move pra esquerda */
+    flex-direction: column; /* organiza em coluna */
+    justify-content: center; /* centraliza */
+  }
+    
 .sec08 form input {
-    width: 900px;
-    padding: 25px;
-    margin-bottom: 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    width: 900px; /* largura do input */
+    padding: 25px; /* padding */
+    margin-bottom: 40px; /* margem inferior */
+    border: none; /* remove borda */
+    border-radius: 5px; /* borda arredondada */
+    font-size: 1rem; /* tamanho da fonte */
 }
 
 .sec08 form button {
-      background-color: #fff;
-      color: #000;
-      border: none;
-      padding: 20px 40px; 
-      border-radius: 5px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      width: 200px; 
-      height: 60px; 
+      background-color: #fff; /* fundo branco */
+      color: #000; /* texto preto */
+      border: none; /* remove borda */
+      padding: 20px 40px;  /* padding */
+      border-radius: 5px; /* borda arredondada */
+      font-size: 1.2rem; /* tamanho da fonte */
+      cursor: pointer; /* cursor de mão */
+      width: 200px;  /* largura do botão */
+      height: 60px;  /* altura do botão */
   }
 
 .sec08 form button:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* muda cor no hover */
   }
   
   .sec08 .contact-options {
-    position: absolute;
-    bottom: 20px;
+    position: absolute; /* posicao absoluta */
+    bottom: 20px; /* distancia do fundo */
   }
   
   .sec08 .container .contact-options p {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1rem; /* tamanho da fonte */
+    margin-bottom: 10px; /* margem inferior */
   }
   
   .sec08 .contact-options .icons a img {
-    width: 50px;
-    height: 50px;
-    margin-right: 50px;
-    margin-left: 20px; 
+    width: 50px; /* largura das icones */
+    height: 50px; /* altura das icones */
+    margin-right: 50px; /* margem direita */
+    margin-left: 20px;  /* margem esquerda */
 }
-  
+
 .sec08 .container .basketball img {
-    width: 600px;
-    height: auto;
-    margin-right: -150px;
-    margin-bottom: 80px;
-    margin-top: -50px;
+    width: 600px; /* largura da imagem */
+    height: auto; /* altura automatico */
+    margin-right: -150px; /* margem direita negativa */
+    margin-bottom: 80px; /* margem inferior */
+    margin-top: -50px; /* margem topo negativa */
     }
     
     .sec08 .container h1 {
-    font-family: 'Gloock', serif;
-    font-size: 102px;
-    line-height: 38.4px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: -1058px;
+    font-family: 'Gloock', serif; /* fonte usada */
+    font-size: 102px; /* tamanho da fonte */
+    line-height: 38.4px; /* espaçamento das linhas */
+    text-align: center; /* centraliza texto */
+    margin-bottom: 20px; /* margem inferior */
+    margin-left: -1058px; /* margem esquerda negativa */
 }
 
 .sec8 {
-    padding: 20px;
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Texto branco para contraste */
+    padding: 20px; /* padding */
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
 }
 
 .sec8 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1200px; /* largura max */
+    margin: 0 auto; /* centraliza */
+    padding: 20px; /* padding */
 }
 
 .sec8 h1 {
-    font-family: 'Gloock', serif;
-    font-size: 65px;
-    text-align: left; /* Alinhar à esquerda */
-    margin-left: -150px;
-    margin-bottom: 20px;
+    font-family: 'Gloock', serif; /* fonte usada */
+    font-size: 65px; /* tamanho da fonte */
+    text-align: left; /* alinha a esquerda */
+    margin-left: -150px; /* margem esquerda negativa */
+    margin-bottom: 20px; /* margem inferior */
 }
 
 .sec8 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinhar à esquerda */
-    background-color: #ccc; /* Fundo cinza */
-    padding: 40px;
-    border-radius: 8px;
-    max-width: 700px; /* Diminuir o tamanho do quadrado */
-    margin-left: -150px;
+    display: flex; /* usa flexbox */
+    flex-direction: column; /* organiza em coluna */
+    align-items: flex-start; /* alinha a esquerda */
+    background-color: #ccc; /* fundo cinza */
+    padding: 40px; /* padding interno */
+    margin-top: 80px; /* margem topo */
+    border-radius: 8px; /* borda arredondada */
+    max-width: 800px; /* largura max */
+    margin-left: -150px; /* margem esquerda negativa */
 }
 
 .sec8 .form-container form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
+    display: flex; /* usa flexbox */
+    flex-direction: column; /* organiza em coluna */
+    width: 100%; /* largura total */
+    max-width: 600px; /* largura max */
 }
 
 .sec8 .form-container label {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* margem inferior */
 }
 
 .sec8 .form-container input {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
+    margin-bottom: 20px; /* margem inferior */
+    padding: 10px; /* padding */
+    font-size: 16px; /* tamanho da fonte */
+    width: 100%; /* largura total */
 }
 
 .sec8 .form-container button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 20px; /* padding */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor de mão */
 }
 
 .sec8 .contact-options {
-    text-align: left; /* Alinhar à esquerda */
-    margin-top: 20px;
+    font-family: 'Gloock', serif; /* fonte usada */
+    font-size: 20px; /* tamanho da fonte */
+    text-align: left; /* alinha a esquerda */
+    margin-top: 20px; /* margem topo */
+    margin-left:-150px; /* margem esquerda negativa */
 }
 
 .sec8 .contact-options .icons {
-    display: flex;
-    justify-content: flex-start; /* Alinhar à esquerda */
-    gap: 20px;
+    display: flex; /* usa flexbox */
+    justify-content: flex-start; /* alinha a esquerda */
+    gap: 40px; /* espaçamento */
 }
 
 .sec8 .contact-options .icons a img {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* largura das icones */
+    height: 40px; /* altura das icones */
 }
 
 .sec8 .basketball {
-    text-align: left; /* Alinhar à esquerda */
-    margin-top: 20px;
+    text-align: left; /* alinha a esquerda */
+    margin-top: -100px; /* margem topo negativa */
 }
 
 .sec8 .basketball img {
-    width: 450px; /* Aumentar o tamanho da imagem */
-    height: auto;
-    margin-left: 900px;
-    margin-top: -450px;
+    width: 450px; /* largura da imagem */
+    height: auto; /* altura automatico */
+    margin-left: 900px; /* margem esquerda */
+    margin-top: -450px; /* margem topo negativa */
 }

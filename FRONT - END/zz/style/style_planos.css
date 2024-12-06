@@ -1,126 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jockey+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+25&family=Jim+Nightshade&family=Jockey+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body {
-    font-family: ;
-    margin: 0;
-    padding: 0;
-    background-color: #001146;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.sec1 {
+  background-image: url("../img/planos fundo.png"); /* usa aspas e espaço sem barra */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
-
-.plano {
-    font-family: "Gloock", serif;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.edit_txt010 {
+  padding-top: 80px;
+  margin-left: 150px;
 }
 
-
-.header {
-    text-align: center;
+.edit_h1 {
+  font-family: "Gloock", serif;
+  color: azure;
+  font-size: 80px;
 }
 
-.header h1 {
-    font-size: 48px;
-    margin: 0;
+.edit_h1 span {
+  font-family: "Freehand", cursive;
+  color: #67A8EA;
 }
 
-.header .titulo {
-    color: #00aaff;
-    font-style: italic;
+.edit_txt010 p {
+  font-family: "Fugaz One", sans-serif;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0,0,0,0.5) ; /* borda cinza */
+  background-color: #ffffff; /* fundo cinza */
+  opacity: 0.5;
+  height: 300px;
+  width: 600px;
+  padding: 105px;
+  padding-left: 182px;
+  font-size: 50px;
 }
 
-.header .preço {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px 20px;
-    background-color: #ffffff; 
-    color: #001146; 
-    border-radius: 8px; 
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+.edit_input {
+  font-family: "Gloock", sans-serif;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0,0,0,0.5) ; /* borda cinza */
+  background-color: #ffffff; /* fundo cinza */
+  opacity: 0.5;
+  height: 300px;
+  width: 300px;
   
 }
 
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-}
-
-.images img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 400px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-
-input {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    background-color: #ffffff;
-    color: #001146;
-    width: 100%;
-}
-
-input::placeholder {
-    color: #888888;
-}
-
-button {
-    padding: 10px;
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #0088cc;
-}
-
-@media (min-width: 768px) {
-    .images {
-        justify-content: space-between;
-    }
-
-    .images img {
-        width: 200px;
-        height: 200px;
-    }
+.edit_input input {
+  color: #111E3A;
 }

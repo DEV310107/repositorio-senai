@@ -13,10 +13,6 @@
                 {
                     "text": "comentar",
                     "id": "uap127lnz3kffy1bvnsxesak"
-                },
-                {
-                    "text": "acessibilidade celular",
-                    "id": "wgl87wxlf6zxo3v34q9pqhee"
                 }
             ],
             "id": "b54jp4igwjydw0ww0evwulr5",
@@ -30,12 +26,12 @@
                     "id": "sw6wdwl1dqyhhn7t5ycll8h9"
                 },
                 {
-                    "text": "fale conosco\n",
-                    "id": "db6g70bh4r8ruf32kon16f13"
-                },
-                {
                     "text": "nossa missao (texto com borda)\n",
                     "id": "udlj465dnrroe28cp1khbj1h"
+                },
+                {
+                    "text": "planos",
+                    "id": "ff6z4hhn9sg49mag4sjojk7y"
                 }
             ],
             "id": "inxetnpb2s6o374vk9531fkk",
@@ -61,10 +57,6 @@
                     "id": "y7sghj6ak10intdzip90781v"
                 },
                 {
-                    "text": "planos",
-                    "id": "ff6z4hhn9sg49mag4sjojk7y"
-                },
-                {
                     "text": "arrumar o pelé",
                     "id": "wzt7lgep26etquwsudy8t3rg"
                 },
@@ -87,6 +79,14 @@
                 {
                     "text": "arrumar icones",
                     "id": "nm45lrc7i3c1n3gtvnpoibug"
+                },
+                {
+                    "text": "fale conosco\n",
+                    "id": "db6g70bh4r8ruf32kon16f13"
+                },
+                {
+                    "text": "acessibilidade celular",
+                    "id": "wgl87wxlf6zxo3v34q9pqhee"
                 }
             ],
             "id": "zkt7f7auxs7j00szzzzo8jn2",
@@ -95,5 +95,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1733487686111
+    "timestamp": 1733491905887
 }
