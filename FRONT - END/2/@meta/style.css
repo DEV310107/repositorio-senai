@@ -1,0 +1,48 @@
+@import url(header.css);
+@import url(home.css);
+
+:root {
+    --primary-color: #434242;
+    --secundary-color: #f5f5f5;
+    --font-size-p:80px;
+    --font-size-m:100px
+}
+ 
+@media screen and (max-width: 375px) {
+    .home-titulo{
+        font-size: 25px;
+        color: var(--secundary-color);
+    }
+
+    .home-descricao {
+        font-size: 14px;
+        color: var(--secundary-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-titulo{
+        font-size: 28px;
+        color: var(--secundary-color);
+    }
+
+    .home-descricao {
+        font-size: 18px;
+        color: var(--secundary-color);
+    }
+}
+
+body {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.home-titulo{
+    font-size: var(--font-size-m);
+    color: var(--secundary-color);
+}
+
+.home-descricao{
+    font-size: var(--font-size-p);
+    color: var(--secundary-color);
+}
