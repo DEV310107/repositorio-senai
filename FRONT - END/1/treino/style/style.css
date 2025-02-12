@@ -1,0 +1,21 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+.cabe {
+    background-color: black;
+    padding: 30px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.barra-pesquisa {
+    color: black;
+    background-color: aliceblue;
+    margin-left: 95vh;
+    border-style:;
+}
