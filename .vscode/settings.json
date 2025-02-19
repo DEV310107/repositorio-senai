@@ -3,5 +3,10 @@
     "editor.lineHeight": 1.8,
     "editor.rulers": [80, 200],     
     "editor.renderLineHighlight": "gutter",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000",
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    }
 }
