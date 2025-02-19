@@ -74,6 +74,8 @@ clientes = {
     }
 }
 
+########################################### METODO GET ############################################################
+
 @app.route("/livro", methods=["get"])
 def livro():
     return livros
@@ -86,6 +88,9 @@ def cliente():
 def autor():
     return autores
 
+
+########################################### METODO DELETE ############################################################
+
 @app.route("/delete_livro/<string:id>", methods=["delete"])
 def delete_livro(id):
     print(f"\n\n--->> {id}\n\n")
@@ -93,15 +98,16 @@ def delete_livro(id):
     del livros[id]
     return livros
 
+############################################## METODO POST #########################################################
+
 @app.route("/add_livro", methods=["post"])
 def add_livro():
     data = request.get_json()
-    print(data)
-    livros[f"{len(livros)+1}"] = data
-    return livros 
+    livros[f"{len(livros) + 1}"] = data
+    return livros
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 
-
+############################################## METODO POST #########################################################
 
