@@ -49,7 +49,8 @@ autores = {
     }
 }
 
-# Dicionário de clientes
+########################################### Dicionário de clientes ############################################################
+
 clientes = {
     "1": {
         "nome": "João Silva",
@@ -111,3 +112,12 @@ if __name__ == '__main__':
 
 ############################################## METODO POST #########################################################
 
+@app.route("/update_livro/<string:id>", methods=["PUT"])
+def update_livro(id):
+    if id not in livros:
+        return {"erro":"livro não encontrado"}, 404
+    
+    data = request.get_json()
+    livros [id].update(data)
+
+    return {"mensagem":"livro atualizado com sucesso", "livro": livros[id]}
