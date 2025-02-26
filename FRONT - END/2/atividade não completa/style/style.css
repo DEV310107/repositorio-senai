@@ -54,3 +54,8 @@
     padding: 5px;   
     margin-top: 30px;
 }
+
+.edit-02 p {
+    display: flex;
+    flex-direction: row;
+}
